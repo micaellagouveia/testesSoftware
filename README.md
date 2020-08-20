@@ -1,1 +1,6 @@
-# testesSoftware
+# Testes de Software
+
+Repositório destinado para anotações das aulas, estudo da matéria de Testes.
+
+## Aulas
+- [Aula 2](aulas/aula2.md)
