@@ -54,3 +54,5 @@ Razões:
 *Se um defeito for executado, o sistema irá falhar.*
 
 Erro → Defeito → Falha
+
+**Link**: https://web.microsoftstream.com/video/06452f0c-77ec-4837-971f-c2baa8e03f24
