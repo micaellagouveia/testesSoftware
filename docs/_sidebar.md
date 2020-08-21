@@ -1,3 +1,4 @@
 - [**Home**](/README.md)
 - **Aulas**
     - [Aula 2](aulas/aula2.md)
+    - [Aula 3](aulas/aula3.md)
