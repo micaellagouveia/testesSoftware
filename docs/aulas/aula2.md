@@ -2,7 +2,7 @@
 ## Conceitos Fundamentais: V&V, Erro, Defeito e Falha
 
 ### **Teste de Software** 
-* É um processo destinado a dar certeza que um código do computador faz o que foi projetado. Deve ser previsível e consistente, não oferencendo surpresas aos usuários.
+* É um processo ou série de processos, destinados a dar certeza que um código do computador faz o que foi projetado. Deve ser previsível e consistente, não oferencendo surpresas aos usuários.
 * Testar um programa significa aumentar a qualidade e a confiabilidade do programa.
 
 *Testar é o processo de executar um programa com a intenção de encontrar erros*
@@ -15,9 +15,18 @@ Garante a qualidade do software. Ocorre em cada estágio do processo de software
 
 **Verificação**: atividades que auxiliam a avaliar se um produto em uma determinada fase do desenvolvimento satisfaz os requisitos estabelecidos. Atividade mais técnica. (TÉCNICA)
 
+Avaliar se funcionalidades do código estão funcionando da forma correta.
+
+*Por que realizar Verificação?*
+- 40% a 50% do esforço de um projeto é gasto em retrabalho.
+- O custo de correção de defeitos cresce a medida que o projeto avança pelas fases de desenvolvimento.
+
 **Validação**: Auxiliam a confirmar se o produto satifaz sua intenção de uso (expectativas do usuário). Atividade que depende de conhecimento do domínio do problema tratado pelo Software. (USUÁRIO)
 
+Avaliar se além das funcionalidades, funciona como esperado pelo usuário (corretamente).
+
 *É possível fazer um teste unitário com o objetivo de validar?*
+Sim, exemplo são as Proofs of Concept, onde construi pedaços do software para validar um conceito e saber se vai funcionar.
 
 
 ### **Produto de Software**
@@ -55,4 +64,9 @@ Razões:
 
 Erro → Defeito → Falha
 
+*Todos os defeitos ou erros são falhas?*
+Não. De acordo com Galin, uma falha de software só se torna uma falha quando "ativada", quando o usuário tenta executar alguma ação e dá erro. Em muitas situações, uma falha de software nunca é ativada devido a falta de interesse do usuário naquela funcionalidade específica ou pelo fato de que a combinação das condições necessárias pra falha acontecer nunca ocorre.
+
 **Link**: https://web.microsoftstream.com/video/06452f0c-77ec-4837-971f-c2baa8e03f24
+
+**Slides**: https://aprender3.unb.br/pluginfile.php/329508/mod_resource/content/2/A4%20-%20TS%20-%20206580_Conceitos%20Fundamentais%20-%20%281%29%20Ver%20Val%20Erro%20Defeito%20Falha.pdf
