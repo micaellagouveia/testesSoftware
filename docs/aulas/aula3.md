@@ -77,35 +77,27 @@ Constrói(necessidade do usuário, produto) -> Testa(produto, defeitos) -> Repar
 
 *Qualidade em uso é a visão da qualidade do produto de software do ponto de vista do usuário, quando esta produto é usado em um ambiente e contexto de uso especificados*
 
-Atualmente a norma ISO/IEC 9126, foi substituída pela norma
-SQuaRE (Série de normas ISO/IEC 25000) com os seguintes benefícios para a área de desenvolvimento de software:
+Atualmente a norma ISO/IEC 9126, foi substituída pela norma SQuaRE (Série de normas ISO/IEC 25000) com os seguintes benefícios para a área de desenvolvimento de software:
 
 **O Modelo de Qualidade em Uso da Square**
 
 A qualidade em uso define cinco características relacionadas à evolução da interação com um sistema. Essas características são (ISO/IEC-25010, 2011):
-1. Efetividade: é a característica que diz respeito a capacidade que o software possui de atender a metas específicas sob condições particulares de uso levando em conta
-a exatidão e a integridade.
-2. Eficiência: é a característica que diz respeito a capacidade que o software possui de apresentar recursos que foram gastos ao atingir metas específicas sob condições
-particulares de uso levando em conta a exatidão e a integridade.
-3. Satisfação: é a característica que diz respeito a capacidade que o software possui de agradar seus clientes diante de um contexto de uso específico.
-4. Inexistência de risco: é a característica que diz respeito a capacidade que o software possui de minimizar riscos econômicos, humanos, para a vida humana e ambientais em um diante de um contexto de uso específico.
-5. Cobertura de Contexto em Uso: é a característica que diz respeito a capacidade que o software tem de possuir eficácia, eficiência inexistência de riscos e satisfação do cliente diante de um contexto de uso específico.
+* Efetividade: é a característica que diz respeito a capacidade que o software possui de atender a metas específicas sob condições particulares de uso levando em conta a exatidão e a integridade.
+* Eficiência: é a característica que diz respeito a capacidade que o software possui de apresentar recursos que foram gastos ao atingir metas específicas sob condições particulares de uso levando em conta a exatidão e a integridade.
+* Satisfação: é a característica que diz respeito a capacidade que o software possui de agradar seus clientes diante de um contexto de uso específico.
+* Inexistência de risco: é a característica que diz respeito a capacidade que o software possui de minimizar riscos econômicos, humanos, para a vida humana e ambientais em um diante de um contexto de uso específico.
+* Cobertura de Contexto em Uso: é a característica que diz respeito a capacidade que o software tem de possuir eficácia, eficiência inexistência de riscos e satisfação do cliente diante de um contexto de uso específico.
 
 **O Modelo de Qualidade do Produto segundo a norma Square**
 
-∙ Adequação Funcional: característica que diz que um produto ou sistema deve fornecer funções que correspondam as necessidades explicitas e implícitas, quando
-usado sob condições especificadas.
-∙ Eficiência de Desempenho: característica que estabelece o desempenho de um determinado sistema em relação à quantidade dos recursos utilizados sob condições
-estabelecidas.
-∙ Compatibilidade: característica que estabelece que um produto, sistema ou componente deve trocar informações e / ou realizar suas funções necessárias, ao compartilhar o mesmo ambiente de hardware ou software.
-∙ Usabilidade: característica que estabelece que um produto ou sistema deve ser usado por um usuário específico para o alcance de metas específicas com eficácia, eficiência e satisfação em um contexto de uso determinado.
-∙ Confiabilidade: característica que diz que um sistema, produto ou componente executa funções específicas sob condições determinadas em um dado período de
-tempo.
-∙ Segurança: característica que diz que um sistema ou produto protege as informações e dados, de modo que as pessoas, outros produtos ou sistemas possuam o grau de acesso de dados apropriado para os seus tipos e níveis de autorização.
-∙ Manutenibilidade: característica que diz que um sistema possui a capacidade de ser modificado com determinado grau de eficácia e eficiência por um conjunto de
-mantenedores.
-∙ Portabilidade: característica que diz que um sistema, produto ou componente pode ser transferido a partir de um hardware, software ou outro ambiente operacional com
-determinado grau de eficácia e eficiência.
+* Adequação Funcional: característica que diz que um produto ou sistema deve fornecer funções que correspondam as necessidades explicitas e implícitas, quando usado sob condições especificadas.
+* Eficiência de Desempenho: característica que estabelece o desempenho de um determinado sistema em relação à quantidade dos recursos utilizados sob condições estabelecidas.
+* Compatibilidade: característica que estabelece que um produto, sistema ou componente deve trocar informações e / ou realizar suas funções necessárias, ao compartilhar o mesmo ambiente de hardware ou software.
+* Usabilidade: característica que estabelece que um produto ou sistema deve ser usado por um usuário específico para o alcance de metas específicas com eficácia, eficiência e satisfação em um contexto de uso determinado.
+* Confiabilidade: característica que diz que um sistema, produto ou componente executa funções específicas sob condições determinadas em um dado período de tempo.
+* Segurança: característica que diz que um sistema ou produto protege as informações e dados, de modo que as pessoas, outros produtos ou sistemas possuam o grau de acesso de dados apropriado para os seus tipos e níveis de autorização.
+* Manutenibilidade: característica que diz que um sistema possui a capacidade de ser modificado com determinado grau de eficácia e eficiência por um conjunto de mantenedores.
+* Portabilidade: característica que diz que um sistema, produto ou componente pode ser transferido a partir de um hardware, software ou outro ambiente operacional com determinado grau de eficácia e eficiência.
 
 ### Comparação entre a Square e a ISO / IEC 9126 
 

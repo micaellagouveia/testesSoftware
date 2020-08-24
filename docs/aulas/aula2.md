@@ -26,6 +26,7 @@ Avaliar se funcionalidades do código estão funcionando da forma correta.
 Avaliar se além das funcionalidades, funciona como esperado pelo usuário (corretamente).
 
 *É possível fazer um teste unitário com o objetivo de validar?*
+
 Sim, exemplo são as Proofs of Concept, onde construi pedaços do software para validar um conceito e saber se vai funcionar.
 
 
@@ -65,6 +66,7 @@ Razões:
 Erro → Defeito → Falha
 
 *Todos os defeitos ou erros são falhas?*
+
 Não. De acordo com Galin, uma falha de software só se torna uma falha quando "ativada", quando o usuário tenta executar alguma ação e dá erro. Em muitas situações, uma falha de software nunca é ativada devido a falta de interesse do usuário naquela funcionalidade específica ou pelo fato de que a combinação das condições necessárias pra falha acontecer nunca ocorre.
 
 **Link**: https://web.microsoftstream.com/video/06452f0c-77ec-4837-971f-c2baa8e03f24
