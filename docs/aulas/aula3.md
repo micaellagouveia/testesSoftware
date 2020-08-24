@@ -117,7 +117,9 @@ A qualidade em uso define cinco características relacionadas à evolução da i
 | 2.5 | Confiabilidade               | Confiabilidade                       | Foi acrescentada a subcaracterística de disponibilidade.                                                                                                                                                                         |
 | 2.6 | Segurança                    | Subcaracterística de Funcionalidade  | Foi adicionada como uma característica, em vez de uma subcaracterística de funcionalidade, com subcaracterísticas confidencialidade, integridade, não-repúdio, prestação de contas e autenticidade.                              |
 | 2.7 | Manutenibilidade             | Manutenibilidade                     | Foram adicionadas duas novas subcaracterísticas a reusabilidade e a modularidade.                                                                                                                                                |
-| 2.8 | Portabilidade                | Portabilidade                        | A subcaracterística co-existência foi movida para a característica de compatibilidade.                                                                                                                                           |
+| 2.8 | Portabilidade                | Portabilidade                        | A subcaracterística co-existência foi movida para a característica de compatibilidade.                                                                       
+
+
 <br>
 
 **Link**: https://web.microsoftstream.com/video/d0e540b7-2e19-42c5-8a7d-e51437ba73af
