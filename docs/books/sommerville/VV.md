@@ -32,7 +32,7 @@ revisões por pares e auditorias, já abordagens dinámicas são
 testes unitários, testes de integração, testes de estresse e 
 testes de segurança.
 
-### Planejamento de V & V
+## Planejamento de V & V
 
 Verificação e Validação é um processo que demanda tempo e 
 consequentemente dinheiro. Os envolvidos no desenvolvimento devem 
@@ -40,7 +40,7 @@ dividir os esforços tanto em abordagens dinâmicas como estáticas,
 para que assim o produto seja validado e verificado durante todo 
 o projeto.
 
-### Inspeções de Software
+## Inspeções de Software
 
 Inspeções de Software é um processo de V & V estático, cujo objetivo 
 é revisar o sistema de softare para encontrar erros, omissões, 
@@ -56,7 +56,7 @@ não é possível atender a ambos os requisitos, já que somente o
 interpretador de Python já consome mais memória que o máximo 
 estipulado.
 
-### Análise estáticas automatizadas
+## Análise estáticas automatizadas
 
 As inspeções de software pode ser automatizadas uma vez definido o 
 que está procurando encontrar. Um ótimo exemplo são os `linters` 
@@ -101,5 +101,78 @@ sistema, limitação de recurso, entradas corrompidas/inválidas com o
 objetivo de verificar o comportamento do software em situações 
 anômalas.
 
+## Teste de sistemas
+
+Teste de sistemas são rotinas que verificam e certificam que 2 ou mais 
+componentes estão se comportando de acordo com as especificações quando 
+integrados. Os testes de sistema podem ser divididos em 2 categorias 
+em sistema de grande porte, **testes de integração** e **testes de releases**.
+
+Testes de integração são rotinas de testes que ocorrem sempre que um 
+componente do sistema é modificado ou adicionado, visando verificar se 
+o sistema como um todo continua se comportando como esperado. Esses 
+testes somente Verificam o software.
+
+Já testes de releases a rotina de software busca Validar o software 
+junto ao cliente. Assim os testes tem como objetivo mostrar que os 
+requisitos e especificações funcionais e não funcionais se encontram 
+presentes durante a entrega do software ao cliente. Os testes de releases 
+também podem ser chamados de **testes de aceitação**.
+
+## Testes de integração
+
+O processo de integração de um sistema envolve a construção de um 
+sistema com base em seus componentes e os testes visam procurar 
+problemas que podem surgir por conta dessa integração. 
+
+Os componentes integrados podem ser comerciais, reusáveis ou específico 
+do sistema em questão. Desse modo, problemas de compatibilidade de dados, 
+interface e acoplamento pode surgir durante essa integração.
+
+O principal problema enfrentado durante os testes de integração é rastrear 
+a origem dos erros. Uma vez que uma funcionalidade apresente defeitos é 
+preciso analisar onde se encontra a origem do defeito, que pode ser 
+decorrente a interações complexas entre componentes.
+
+Uma abordagem sugerida é que se realize uma abordagem incremental dos testes 
+de integração. Por exemplo, imagine que a funcionalidade "Validação de cadastro" 
+envolva os componentes A, B, C e D em suas rotinas. É sugerido que exista 
+uma suite de teste que verifique a integração entre (A e B), caso nenhum problema 
+seja exposto teste outra suite de teste (A, B e C), e por fim caso nenhum problema 
+apareça teste (A, B, C e D). Com essa abordagem incremental se torna mais fácil 
+identificar a origem do problema.
+
+## Teste de Release
+
+O objetivo de um teste de release é validar o software junto ao cliente. A meta 
+principal é demonstrar que o sistema atende aos requisitos. Para demonstrar que 
+o sistema atendem aos requisitos é preciso mostrar funcionalidades, desempenho e 
+confiabilidade, além de não demonstrar falhas durante esse processo de 
+demonstração.
+
+Os testes de release são geralmente **testes caixa-preta** ou **testes funcionais**,
+isso é, testes que analisam somente entradas e saídas, com objetivo de verificar 
+se a funcionalidade se encontra implementada de acordo com seus requisitos 
+não-funcionais.
+
+Durante o teste de release também são executados **testes de defeito**, com o 
+objetivo de demonstrar que o software mesmo com entradas inconsistentes 
+permanece em um estado válido de funcionamento.
+
+Uma vez que o objetivo do teste de release é demonstrar que os requisitos estão 
+presentes no sistema, é necessário que cada requisito tenha uma suite de teste 
+associada.
+
+Requisitos não-funcionais são testados com **testes de desempenho**. 
+
+## Testes de Desempenho
+
+Testes de desempenho visam demonstrar que os requisitos não-funcionais estão 
+presentes no sistema. Esses testes são realizados com base no requisito que se 
+deseja demonstrar. O requisito de confiabilidade pode ser testado expondo o 
+sistema a várias horas de funcionamento. Requisito de recuperabilidade pode ser 
+testado forçando o sistema a falhar e observando se o sistema volta a um estado 
+consistente. Requisitos de desempenho pode ser testado forçando o sistema a 
+operar próximo dos limites estipulados.
 
 
