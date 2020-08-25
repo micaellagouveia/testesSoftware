@@ -176,3 +176,76 @@ consistente. Requisitos de desempenho pode ser testado forçando o sistema a
 operar próximo dos limites estipulados.
 
 
+## Teste de Componentes
+
+Testes de componentes, também chamados de testes de unitários, são 
+conjuntos de testes que visão expor erros e comportamentos inesperados 
+em componentes de software.
+
+Testes de funções, métodos e classes são exemplos de testes de componentes 
+que um sistema deve possuir.
+
+## Testes de interface
+
+Uma prática comum no desenvolvimento de software moderno é a utilização de 
+interfaces, facilitando assim a substituição de componentes sem grandes 
+mudanças em outros trechos do sistema.
+
+Desse modo, todo componente que implementar uma interface deve passar 
+por uma suite de testes que certifique que a implementação da interface 
+foi bem sucedida.
+
+## Projeto de casos de teste
+
+A primeira etapa do projeto de casos de teste é determinar o que será 
+testado (componente, módulo, sistema, interface, etc). Após definido é 
+preciso definir qual característica será averiguada ou testada. 
+
+Uma vez definido o escopo do teste, é definido os casos que testam o sistema.
+Os casos são um conjunto de entrada e saída esperados que comprovam 
+uma funcionalidade ou que gera um dado (tempo de execução, memória utilizada, 
+taxa de falha) que comprove uma funcionalidade ou expõe um erro.
+
+A escolha desses casos de teste deve ser pensada com cuidado, para que o 
+teste sirva ao seu propósito. Uma vez que é inviável testar todos os cenários 
+possíveis é preciso uma abordagem prática para escolher quais cenários serão 
+testados.
+
+Existem várias abordagens para projetar os casos de testes, as três mais 
+utilizadas são **Teste baseado em requisitos**, **Teste de partições** e 
+**Teste Estrutural**.
+
+## Teste baseado em requisitos
+
+Nessa abordagem, os casos de testes são pensados com base nos requisitos 
+do sistema. Teste baseados em requisitos são testes de validação em vez de 
+teste de defeitos, logo seu propósito é demonstrar que todas as 
+especificações definidas nos requisitos são atendidas por uma suite de teste.
+
+## Teste de partições
+
+Essa abordagem considera que é possível validar um grupo de entrada a partir 
+de um representante desse grupo. Por exemplo, imagine que é preciso testar 
+uma função chamada "add(int x, int y)", nessa abordagem é considerado um 
+teste com dois representantes dos conjuntos dos "ints" é suficiente para 
+validar todo o grupo dos inteiros. 
+
+Para essa abordagem é necessário analisar quais são os intervalos possíveis 
+de valores para que seja possível escolher bons representantes desse conjunto.
+
+Uma boa prática é escolher valores de margens e valores médios para os 
+representantes. Ou seja, no exemplo acima, considerando que os inteiros vão de 
+[-2³¹, 2³¹-1] seria interessante testar as margens desses conjunto para 
+verificar se a função apresenta comportamentos inesperados.
+
+## Teste estrutural
+
+Nessa abordagem é levado em conta os estados intermediários durante a execução.
+Desse modo é preciso analisar a estrutura interna do que será testado para 
+que seja possível testar todos os fluxos de execução possíveis.
+
+Por exemplo, imagine que uma função que processe uma lista de valores e 
+adicione 20 se o valor for maior que 10 ou substraia 30 se o valor for 
+menor que 5. Nesse caso é preciso testar os 2 fluxos possíveis dessa função, 
+escolhendo tanto valores maiores que 10 quanto valores menores que 5.
+
