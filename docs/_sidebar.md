@@ -2,3 +2,5 @@
 - **Aulas**
     - [Aula 2](aulas/aula2.md)
     - [Aula 3](aulas/aula3.md)
+- **Livro Sommerville**
+    - [Verificação e Validação](books/sommerville/VV.md)
