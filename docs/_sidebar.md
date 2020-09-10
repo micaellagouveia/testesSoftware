@@ -4,3 +4,5 @@
     - [Aula 3](aulas/aula3.md)
 - **Livro Sommerville**
     - [Verificação e Validação](books/sommerville/VV.md)
+- **Normas**
+    - [ISO/IEC 25010](normas/iso_iec_25010.md)
