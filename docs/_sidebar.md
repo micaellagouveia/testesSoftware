@@ -4,5 +4,7 @@
     - [Aula 3](aulas/aula3.md)
 - **Livro Sommerville**
     - [Verificação e Validação](books/sommerville/VV.md)
+- **Livro Garantia de Qualidade De Software** 
+    - [Capítulo 2 - Adquirindo Maturidade Organizacional](books/alexandre_bartie/cap_2.md)
 - **Normas**
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
