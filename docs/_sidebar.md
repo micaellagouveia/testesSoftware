@@ -8,3 +8,5 @@
     - [Capítulo 2 - Adquirindo Maturidade Organizacional](books/alexandre_bartie/cap_2.md)
 - **Normas**
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
+- **Aulas UNIVESP**
+    - [Gerência de Qualidade de Software](univesp/GerenciaQualidade.md)
