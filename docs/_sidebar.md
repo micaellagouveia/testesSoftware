@@ -9,6 +9,7 @@
     - [Capítulo 3 - Definindo Qualidade de software](books/alexandre_bartie/cap_3.md)
 - **Livro Introdução ao Teste de Software** 
     - [Capítulo 1 - Conceitos Básicos](books/eduardo_delamaro/cap1.md)
+    - [Capítulo 2 - Teste Funcional](books/eduardo_delamaro/cap2.md)
 - **Normas**
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
 - **Aulas UNIVESP**
