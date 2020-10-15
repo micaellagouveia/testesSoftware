@@ -2,6 +2,7 @@
 - **Aulas**
     - [Aula 2](aulas/aula2.md)
     - [Aula 3](aulas/aula3.md)
+    - [Testes Exploratórios](aulas/testesExploratorios.md)
 - **Livro Sommerville**
     - [Verificação e Validação](books/sommerville/VV.md)
 - **Livro Garantia de Qualidade De Software** 
