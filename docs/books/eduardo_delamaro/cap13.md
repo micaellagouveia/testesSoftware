@@ -50,13 +50,13 @@ No estudo sobre confiabilidade de software, a variável aleatória de interesse 
 A probabilidade de que haja uma falha no software em decorrência do tempo t é definida como:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-0.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-0.png" width="500">
 </p>
 
 em que f(t) é a função densidade de probabilidade e F (t) é a função distribuição de probabilidades, da variável aleatória T . Por conseqüência, a probabilidade de que não ocorra falha no software até o tempo t é definida como:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-1.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-1.png" width="500">
 </p>
 
 
@@ -68,7 +68,7 @@ Na literatura clássica, a definição sobre confiabilidade amplamente adotada �
 Assim, a função Confiabilidade, também chamada de função de sobrevivência de um software, é definida como:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-2.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-2.png" width="500">
 </p>
 
 Quando uma base de tempo é determinada, as falhas no software podem ser expressas por várias funções, como: função Taxa de Talhas, função de Falhas Acumuladas, função Intensidade de Falhas, tempo médio para falhas (MTTF) e tempo médio entre falhas (MTBF).
@@ -81,13 +81,13 @@ Para descrever o ritmo de ocorrência das falhas em um sistema, a taxa de falhas
 falhou até o tempo t. Na prática, a taxa de falhas é a razão entre o incremento do número de falhas e o incremento de tempo correspondente. Assim, usando a probabilidade condicional, tem-se que:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-3.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-3.png" width="500">
 </p>
 
 A taxa de falhas instantânea, Z(t), também conhecida como taxa de risco associada à variável aleatória T , é definida como:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-4.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-4.png" width="500">
 </p>
 
 Ou seja, a taxa de risco é definida como o limite da taxa de falhas quando o intervalo Δt tende a zero (Δt → 0).
@@ -103,7 +103,7 @@ A Região II, conhecida como período de vida útil do sistema ou fase de opera�
 A Região III representa a fase de desgaste do sistema, caracterizada pelo crescimento na taxa de falhas em função do tempo.
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/fig-13-1.png" width="200">
+  <img src="books/eduardo_delamaro/static/fig-13-1.png" width="600">
 </p>
 
 A confiabilidade de software é semelhante à confiabilidade de hardware, tendo em vista que ambas são processos probabilísticos e podem ser descritas por distribuições de probabilidades. Contudo, a confiabilidade de software é diferente da confiabilidade de hardware no sentido de que o software não se desgasta com o tempo, ou seja, a confiabilidade não decresce com o tempo. Conseqüentemente, a Região III não se aplica à confiabilidade de software. No software, geralmente, a confiabilidade cresce na fase de teste e na fase de operação, desde que as falhas sejam removidas quando detectadas. No entanto, pode ocorrer um decréscimo na confiabilidade devido a alterações abruptas no ambiente de operação do sistema ou modificações incorretas na manutenção.
@@ -117,7 +117,7 @@ A taxa de falhas ideal para o software é decrescente. A Figura 13.2 dá uma id�
 Ao se observar o comportamento da taxa de falhas em algum ponto, por meio de evidência estatística, é possível prever o comportamento da taxa de falhas em um tempo futuro. Com isso, os modelos de confiabilidade de software podem prever o tempo adicional necessário para o teste do software até que se atinja o objetivo especificado – a taxa de falhas desejada. Pode-se também estimar a confiabilidade ao término do teste.
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/fig-13-2.png" width="200">
+  <img src="books/eduardo_delamaro/static/fig-13-2.png" width="500">
 </p>
 
 Quando se considera crescimento de confiabilidade, uma medida usual é a confiabilidade condicional. Dado que o sistema teve n−1 falhas, a confiabilidade condicional é a função de sobrevivência associada à n-ésima falha do sistema. A confiabilidade condicional é de interesse quando o sistema está em fase de desenvolvimento, período em que se observa o tempo para a próxima falha. Quando o sistema está liberado e em fase operacional, o interesse passa a ser o intervalo de tempo livre de falhas e, nesse caso, os instantes de falha não são necessariamente condicionados às falhas anteriores. O interesse é a confiabilidade em um dado intervalo de tempo, independentemente do número de falhas ocorridas anteriormente.
@@ -135,7 +135,7 @@ O processo aleatório pode ser completamente especificado, assumindo-se uma dist
 Como M (t) assume somente valores inteiros, as correspondentes distribuições de probabilidades devem ser do tipo discretas. As distribuições de probabilidades Poisson e Binomial são bastante utilizadas para descrever o processo aleatório M(t).
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/fig-13-3.png" width="200">
+  <img src="books/eduardo_delamaro/static/fig-13-3.png" width="500">
 </p>
 
 #### 13.2.1.4. Função Intensidade de Falhas
@@ -171,7 +171,7 @@ A confiabilidade do software também pode ser medida quando se conhece a distrib
 Pode-se desejar, também, saber a probabilidade de que o software opere sem falhas em um intervalo de tempo [t1 , t2]. Assim, a confiabilidade do software nesse intervalo pode ser calculada como:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-6.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-6.png" width="300">
 </p>
 
 Pode ser mostrado que:
@@ -203,7 +203,7 @@ As funções Densidade de Probabilidade f (t) e Distribuição de Probabilidade 
 em que t > 0 e λ > 0, λ é um parâmetro. A Figura 13.6 ilustra o comportamento da função Densidade de Probabilidades Exponencial.
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/fig-13-6.png" width="200">
+  <img src="books/eduardo_delamaro/static/fig-13-6.png" width="600">
 </p>
 
 A região hachurada na Figura 13.6 representa a probabilidade de não ocorrência de falhas até o tempo t o . Observa-se que para pequenos intervalos de tempo é grande a probabilidade de não ocorrência de falhas. Por outro lado, para grandes intervalos de tempo é pequena a probabilidade de não ocorrência de falhas.
@@ -298,11 +298,13 @@ Nesta seção são apresentados alguns dos mais importantes modelos de confiabil
 O propósito desta seção é apresentar um levantamento dos principais modelos, considerando as abordagens existentes de modelagem e estimação da confiabilidade de software. Não se pretende esgotar o assunto, mas, em uma forma sucinta, apresentar as suposições fundamentais do modelo, os dados necessários para sua aplicação e, finalmente, sua forma funcional. Não se apresentam os detalhes sobre a estimação dos parâmetros de cada modelo nem a dedução matemática de sua forma funcional.
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/tabela-13-5.png" width="200">
+  <img src="books/eduardo_delamaro/static/tabela-13-5.png" width="700">
 </p>
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/tabela-13-6.png" width="200">
+  <img src="books/eduardo_delamaro/static/tabela-13-6.png" width="700">
 </p>
 
 ### 13.4.1. Modelos de Implante de Defeitos
+
+
