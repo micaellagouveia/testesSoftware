@@ -11,6 +11,7 @@
 - **Livro Introdução ao Teste de Software** 
     - [Capítulo 1 - Conceitos Básicos](books/eduardo_delamaro/cap1.md)
     - [Capítulo 2 - Teste Funcional](books/eduardo_delamaro/cap2.md)
+    - [Capítulo 13 - Confiabilidade](books/eduardo_delamaro/cap13.md)
 - **Normas**
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
 - **Aulas UNIVESP**
