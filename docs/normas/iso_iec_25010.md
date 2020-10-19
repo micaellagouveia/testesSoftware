@@ -23,7 +23,9 @@ As funções do sistema devem facilitar a realização de tarefas para atender o
 
 ## 2. Eficiência de desempenho
 
-Esse tópico está relacionado com o desempenho de um determinado sistema em relação à quantidade de recursos utilziados sob condições estabelecidas.
+Esse tópico está relacionado com o desempenho de um determinado sistema em relação à quantidade de recursos utilizados sob condições estabelecidas.
+
+Analisar o desempenho de software tem por objetivo estimar tempo e recursos consumidos, descobrir potenciais pontos de gargalo de processamento e predizer o desempenho do sistema em um ambiente real.
 
 ### 2.1. Comportamento Temporal
 
@@ -148,7 +150,7 @@ Os requisitos funcionais e não funcionais do sistema de software devem ser impl
 
 ## 8. Portabilidade
 
-O sistema deve ser capaz de suportar difrentes cenários de uso
+O teste de portabilidade tem como principal objetivo de verificar se o software tem a capacidade de trabalhar em diversos ambientes e situações. Em outras palavras, este teste verifica se o software é capaz de trabalhar com diversos dispositivos de hardware e com outros software em um único ambiente.
 
 ### 8.1. Adaptabilidade
 
