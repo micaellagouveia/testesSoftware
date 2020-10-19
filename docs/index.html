@@ -15,6 +15,9 @@
     blockquote {
       color: black !important;
     }
+    body > main > section > aside {
+      width: 300px !important;
+    }
   </style>
 
 </head>
@@ -23,9 +26,14 @@
   <script>
     window.$docsify = {
       name: 'Testes de Software',
-      loadSidebar: true
+      loadSidebar: true,
+      toc: {
+        tocMaxLevel: 3,
+        target: 'h2, h3, h4, h5, h6'
+      },
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-plugin-toc"></script>
 </body>
 </html>

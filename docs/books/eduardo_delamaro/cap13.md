@@ -1,4 +1,4 @@
-<div align='justify' style="width: 65%; margin: auto;">
+<div align='justify' style="width: 80%; margin: auto;">
 
 # Capítulo 13 - Confiabilidade
 
@@ -318,7 +318,7 @@ Uma outra técnica proposta por Rudner emprega o procedimento de teste de dois e
   <img src="books/eduardo_delamaro/static/img-13-10.png" width="100">
 </p>
 
-Basin propõe a seguinte técnica: supõe que um programa consiste em M comandos, dos quais n são aleatoriamente selecionados para se introduzirem defeitos. Se r comandos são escolhidos ao acaso e testados, sendo k 1 com defeitos inerentes e k 2 com defeitos implantados, então pode ser mostrado que o estimador de máxima verossimilhança do número total N de defeitos no programa é dado por:
+Basin propõe a seguinte técnica: supõe que um programa consiste em M comandos, dos quais n são aleatoriamente selecionados para se introduzirem defeitos. Se r comandos são escolhidos ao acaso e testados, sendo k1 com defeitos inerentes e k2 com defeitos implantados, então pode ser mostrado que o estimador de máxima verossimilhança do número total N de defeitos no programa é dado por:
 
 <p align="center">
   <img src="books/eduardo_delamaro/static/img-13-11.png" width="200">
@@ -331,14 +331,16 @@ Algumas críticas são feitas a essas técnicas. Na prática, não é tão simpl
 Nesta subseção são apresentados os modelos que se baseiam no particionamento do domínio dos dados de entrada do software para se estimar a sua confiabilidade. Essa abordagem inclui procedimentos que estimam a confiabilidade corrente do programa estritamente baseada no número observado de execuções com sucesso (execuções sem falhas), em relação ao número total de execuções do programa. Nesta categoria, incluem-se, também, os procedimentos que usam dados de teste selecionados de acordo com a distribuição de probabilidades do perfil operacional de uso do programa. O domínio de entrada do programa é dividido em classes, e as probabilidades de cada classe são fixadas de acordo com o perfil de uso do programa. Como exemplo, vamos supor que o domínio de entrada de um programa seja o conjunto dos números inteiros positivos. Sabe-se antecipadamente que 25%, 35%, 30% e 10% são, respectivamente, as porcentagens dos dados de entradas referentes aos intervalos [0 – 1500], [1501 – 2500], [2501 – 3500] e [3501 e mais ]. Assim, em uma amostra aleatória de 200 casos de teste, 50, 70, 60 e 20 devem ser os números de casos de teste, respectivamentes selecionados, para representar cada um dos intervalos. Ou seja, a distribuição de probabilidades de seleção seria 0,25, 0,35, 0,30 e 0,1. A confiabilidade estimada para o programa será o número de execuções com sucesso sobre o valor 200. De uma forma geral, se N entradas são selecionadas de acordo com o perfil operacional e S são as execuções com sucesso (sem falhas), então a estimativa da confiabilidade do programa é dada por:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-12.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-12.png" width="100">
 </p>
 
 Nesta abordagem, vários pesquisadores propuseram variações na forma de se estimar a confiabilidade.
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-13.png" width="200">
-  <img src="books/eduardo_delamaro/static/img-13-14.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-13.png" width="100">
+</p>
+<p align="center">
+  <img src="books/eduardo_delamaro/static/img-13-14.png" width="100">
 </p>
 
 em que L é o número de instruções de máquina submetido e W é o número médio de instruções por bits. Essa modificação normaliza o estimador pelo tamanho do programa e pelo tipo de máquina utilizada.
@@ -459,7 +461,7 @@ A seguir é descrito um modelo de confiabilidade de software que faz uso da info
 
 #### 13.4.4.1. Modelo tipo Binomial baseado em cobertura – MBBC
 
-O modelo de crescimento de confiabilidade tipo Binomial baseado em cobertura foi proposto em 1997 por Crespo. Os modelos tipo Binomial são caracterizados pela forma funcional da taxa de falhas por defeito “a”, Z a (n), em que n é o número de dados de teste aplicados para se revelar o defeito “a”.
+O modelo de crescimento de confiabilidade tipo Binomial baseado em cobertura foi proposto em 1997 por Crespo. Os modelos tipo Binomial são caracterizados pela forma funcional da taxa de falhas por defeito “a”, Za(n), em que n é o número de dados de teste aplicados para se revelar o defeito “a”.
 
 Neste modelo, a taxa de falhas Za(n) é proporcional às seguintes medidas:
 - a) Número de dados de teste aplicados no software até a ocorrência da falha provocada pelo defeito “a”.
@@ -475,7 +477,7 @@ O modelo tipo Binomial está fundamentado nas seguintes suposições:
 - 6. a taxa de falhas condicional tem a seguinte forma funcional:
 
 <p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-15.png" width="200">
+  <img src="books/eduardo_delamaro/static/img-13-15.png" width="150">
 </p>
 
 em que:
