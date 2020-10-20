@@ -86,9 +86,36 @@ Um problema que pode surgir durante esse tour é quando uma sequência de passos
 Os passos para executar esse tour é definir uma lista de pontos de referências que serão visitados, definir uma ordem de visita, e visite os pontos observando se a ordem altera os fatores.
 
 ###### 3.2.1.1.4. Tour Intelectual
-<!-- VOU FAZER DEPOIS -->
 
-##### 3.2.1.1.8. Resumo dos Tours do Distrito de Negócios
+Na metáfora do turista, o tour intelectual faz alusão ao guia que tem em seu grupo um turista muito curioso que sabe mais do que a médio dos demais turistas. Esse turista curioso faz perguntas difíceis e coloca a todo momento em cheque o conhecimento do guia.
+
+No contexto dos testes exploratório, o testador é o turista curioso, e ele é quem deve questionar o software, tentando por em cheque a lógica do sistema.
+
+Esse tour pode detectar desde erros graves de lógica até erros simples de layout.
+
+###### 3.2.1.1.5. Tour FedEx (Correio)
+
+Na metáfora do turista, o FedEx é o responsável por levar os  "pacotes" de um lado a outro na cidade. Nos testes exploratórios, os pacotes são os dados que são movidos pelo software.
+
+O objetivo desse tour é identificar problemas durante a manipulação dos dados pelo sistema. Esses problemas podem ser erros de conversão, pontos onde os dados se perdem, pontos onde os dados são duplicados, etc.
+
+###### 3.2.1.1.6. Tour Fora do Horário Comercial (The After-Hours Tour)
+
+Na metáfora do tursita, esse tour se refere a locais da cidade que após um certo horário não recebe mais turistas, porém mesmo sem turistas realizam certas atividades (manutenção, limpeza, etc.)
+
+No contexto de teste exploratórios os locais das cidades são serviços que param de ser ofertados em um certo horário do dia, e as atividades são backup de dados, processamento de lote, manutenção do sistema etc.
+
+O testador deve identificar esses locais no software e procurar por falhas nessas atividades.
+
+###### 3.2.1.1.7. Tour do coletador de lixo (The Carbage Collector's Tour)
+
+Na metáfora do turista, os coletadores de lixo são aqueles que melhor conhecem os caminhos pela cidade, uma vez que eles diariamente realizam percursos de forma metódica pela cidade.
+
+No contexto de teste exploratório, o testador irá de forma metódica percorrer uma área do software realizando as tarefas rapidamente. Essas áreas do software podem ser: todas as opções do menu, todas as perguntas do formulário, todas as opções de pagamento, ...
+
+O objetivo desse tour é fazer uma grande "varredura" o mais rápido possível para identificar problemas que são fácilmente identificados.
+
+##### 3.2.1.2. Resumo dos Tours do Distrito de Negócios
 
 
 * Sistemas que dependem da inicialização e desligamento prontos pra uso.
@@ -108,7 +135,18 @@ Os passos para executar esse tour é definir uma lista de pontos de referências
 | Identificar cada característica que infleuncia ou sofre influência nos dados. | Identificar falhas resultantes da execução dessas atividades. | Cobrir determinado objetivo de forma metódica, não dependendo do tempo e verificando o mais óbvio. |
 | Identificar possíveis pontos que esses dados são corrompidos no processamento. |  |  |
 
-### Distrito Histórico
+#### 3.2.2. Distrito Histórico
+
+##### 3.2.2.1. Tours (3)
+
+##### 3.2.2.1.1. Tour pelo bairro ruim
+
+##### 3.2.2.1.2. Tour pelo museu
+
+##### 3.2.2.1.3. Tour da versão anterior
+
+##### 3.2.2.2. Resumo dos Tours do Distrito Histórico
+
 * Tem como objetivo testar softwares legado.
 
 | Tour pelo bairro ruim | Tour pelo museu | Tour da versão anterior |
