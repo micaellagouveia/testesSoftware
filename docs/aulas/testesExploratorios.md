@@ -1,8 +1,15 @@
 # Testes Exploratórios
 
-Abordagem de aprendizagem simultânea. Simultâneo aprendizado, design e execução de testes; isto é, os testes não são definidos previamente em um plano de teste estabelecido, mas são dinamicamente projeto, executado e modificado.
+Abordagem de aprendizagem simultânea. Simultâneo aprendizado, design e execução de testes; isto é, os testes não são definidos previamente em um plano de teste estabelecido, mas são dinamicamente projeto, executado e modificado. (SWEBOK)
 
-## Contextos de Uso
+"Pensamento científico em tempo real".
+
+A eficiência do teste exploratório depende da experiência do testador. Para que essa abordagem funcione, é preciso que o testador conheça o comportamento esperado do sistema, que tenha familiaridade com a plataforma do sistema, o processo de falha (como é identificado), os tipos de falhas que o sistema pode gerar, o risco associado a cada falha e etc. Em outras palavras, é preciso que o testador saiba o que está fazendo e não saia simplesmente "explorando" sem um objetivo em mente.
+
+## 1. Contextos de Uso
+
+Exemplos de cenários em que os testes exploratórios podem ser utilizados:
+
 * Quando é necessário um feedback ou apredizagem rápida do produto
 * Quando não há disponibilidade de tempo para aplicações sistemáticas de testes.
 * Auxiliar na investigação de fatores de riscos específicos.
@@ -10,8 +17,9 @@ Abordagem de aprendizagem simultânea. Simultâneo aprendizado, design e execuç
 * Na realização de teste de regressão baseados em relatórios de defeitos
 * Na construção de testes a partir da perspectiva do usuário, originando-se de um manual de usuário, por exemplo.
 
-## O que podemos identificar nessa fase?
-* Aléem de bugs funcionais, podem ser identificados problemas de layout, UX, regras de negócios.
+## 2. O que podemos identificar nessa fase?
+
+Além de bugs funcionais, podem ser identificados problemas de layout, UX, regras de negócios e outros.
 
 | Vantagens | Desvantagens |
 |-----------|--------------|
@@ -20,19 +28,96 @@ Abordagem de aprendizagem simultânea. Simultâneo aprendizado, design e execuç
 | Criam novos cenários para testes | Não devem ser levados como principal abordagem de teste |
 | Incentiva a discussão do tima sobre os itens | - |
 
-* Eles não são livres de documentação, e sim são feitas ao longo do desenvolvimento dos testes.
+* Os testes exploratório não é livre de documentação, e sim são feitas ao longo do desenvolvimento dos testes.
 * Devem possuir uma boa orientação e objetivo.
 
+## 3. Metáfora do Turista (Whittaker)
 
-## Metáfora do Turista
+A metáfora do turista apresentada por Whittaker faz uma alusão a um turista que visita uma grande cidade. Sem a preparação de um guia, é basicamente impossível conhecer a cidade em pouco tempo, pois há diversos lugares dignos de atenção. Ou seja, é extremamente importante possuir uma estratégia para que o tempo e os recursos sejam bem aproveitados e assim guiar as decisões. Nessa metáfora, o turista é o testador, a grande cidade é o sistema, e os lugares dignos de atenção são as diversas regiões do software que podem ser analisadas.
 
-### Planejamento do teste
-* Decomposição do sistema baseado na **intenção** e não em estruturas correlacionadas ao aplicativo em teste.
-* Distribuição dos recursos e esforços
+### 3.1. Planejamento / Estratégia 
+
+Segundo Whittaker, o primeiro passo antes de iniciar o planejamento do teste do sistema é decompor o todo em partes menores para facilitar a gerência dos recursos.
+
+A Metáfora do Turista sugere a decomposição baseada na inteção do testador, e não nas estruturas do sistema. Nessa abordagem, o turista irá dividir o seu plano de viagem de acordo com os distritos da cidade que pretende visitar.
 
 ![turista](../assets/metaforaTurista.png)
 
-### Distrito de Negócios
+Cada distrito possui uma inteção central relacionada, e é composto por tours que definem o que exatamente será "visitado" pelo turista.
+
+### 3.2. Distritos
+
+#### 3.2.1. Distrito de Negócios
+
+O distrito de negócios faz alusão ao centro comercial de uma cidade. Onde durante um período de tempo está congestionada, com alto fluxo de pessoas. E durante outra parte do dia está vazia, sem pessoas circulando.
+
+No software, seria as partes do sistema que possuem um horário de funcionamento, ou seja, tem a hora que está funcionando e hora que está indisponível.
+
+##### 3.2.1.1. Tours (7)
+
+###### 3.2.1.1.1. Tour Guiado
+
+O tour guiado faz alusão ao tour clássico que os turistas fazem ao visitar uma cidade, com o pontos principais que mais aparecem nos guias de turismo.
+
+Assim, o testador iria pegar o manual do usuário, e vai realizar as atividades lá descritas. O objetivo é executar cada cenário descrito no manual de forma a verificar se o software é capaz de executar o que está descrito no manual e também verificar se o manual está descrito de forma que represente a versão atual do sistema.
+
+Deve-se ficar alerta a desvios de funcionalidades, e inconsistências no manual são exemplos de problemas que podem ser encontrados no tour guiado.
+
+###### 3.2.1.1.2. Tour Monetário
+
+Toda cidade possui um conjunto de atrações primárias que motivam os turistas a visitá-las (Orlando -> Parque da Disney, Las Vegas -> Hollywood, Las Vegas -> Cassinos). A metáfora com o software é que todo sistema tem um conjunto de funcionalidades chaves que motivaram o seu desenvolvimento.
+
+O tour monetário busca verificar a coerência das funcionalidades da versão atual do produto com as especificações do sistema. Normalmente, a equipe de vendas é quem fornece as informações importantes para esse tour, pois geralmente são eles que detalham as especificações do produto durante suas vendas.
+
+O objetivo desse tour é encontrar inconsistências no produto em relação a sua especificação. Os defeitos encontrados nesse tour seriam os mesmo que os usuários reais do sistema iriam encontrar, quando descobrissem que o produto que recebeu não é o que foi vendido.
+
+Os passos para executar esse tour seria particiar de reuniões de vendas, assistir vídeos de marketing e analisar o que está sendo prometido aos clientes/usuários.
+
+Após o entendimento do que é prometido (ou até mesmo especificado), o testador irá confrontar o sistema para verificar se ele é capaz de realizar o que é prometido/especificado.
+
+###### 3.2.1.1.3. Tour ao Ponto de Referência (Landmark tour)
+
+Segundo Whittaker, o turista ele deve saber exatamente onde quer chegar, para não se perder durante o trajeto, uma vez que pode encontrar outras atrações no caminho.
+
+No contexto de testes exploratórios, o testador irá definir uma sequência de pontos de referências (funcionalidades do sistema) e irá executar os passos necessários para realizá-las, sequêncialmente. Dessa forma, o testador irá avaliar a interação de diferentes características do produto, quando executadas em diferentes sequências.
+
+Um problema que pode surgir durante esse tour é quando uma sequência de passos interere na execução de uma atividade não correlata. Por exemplo, em um sistema é possível curtir e comentar uma foto individualmente. Porém após comentar uma foto, não é mais possível curtí-la.
+
+Os passos para executar esse tour é definir uma lista de pontos de referências que serão visitados, definir uma ordem de visita, e visite os pontos observando se a ordem altera os fatores.
+
+###### 3.2.1.1.4. Tour Intelectual
+
+Na metáfora do turista, o tour intelectual faz alusão ao guia que tem em seu grupo um turista muito curioso que sabe mais do que a médio dos demais turistas. Esse turista curioso faz perguntas difíceis e coloca a todo momento em cheque o conhecimento do guia.
+
+No contexto dos testes exploratório, o testador é o turista curioso, e ele é quem deve questionar o software, tentando por em cheque a lógica do sistema.
+
+Esse tour pode detectar desde erros graves de lógica até erros simples de layout.
+
+###### 3.2.1.1.5. Tour FedEx (Correio)
+
+Na metáfora do turista, o FedEx é o responsável por levar os  "pacotes" de um lado a outro na cidade. Nos testes exploratórios, os pacotes são os dados que são movidos pelo software.
+
+O objetivo desse tour é identificar problemas durante a manipulação dos dados pelo sistema. Esses problemas podem ser erros de conversão, pontos onde os dados se perdem, pontos onde os dados são duplicados, etc.
+
+###### 3.2.1.1.6. Tour Fora do Horário Comercial (The After-Hours Tour)
+
+Na metáfora do tursita, esse tour se refere a locais da cidade que após um certo horário não recebe mais turistas, porém mesmo sem turistas realizam certas atividades (manutenção, limpeza, etc.)
+
+No contexto de teste exploratórios os locais das cidades são serviços que param de ser ofertados em um certo horário do dia, e as atividades são backup de dados, processamento de lote, manutenção do sistema etc.
+
+O testador deve identificar esses locais no software e procurar por falhas nessas atividades.
+
+###### 3.2.1.1.7. Tour do coletador de lixo (The Carbage Collector's Tour)
+
+Na metáfora do turista, os coletadores de lixo são aqueles que melhor conhecem os caminhos pela cidade, uma vez que eles diariamente realizam percursos de forma metódica pela cidade.
+
+No contexto de teste exploratório, o testador irá de forma metódica percorrer uma área do software realizando as tarefas rapidamente. Essas áreas do software podem ser: todas as opções do menu, todas as perguntas do formulário, todas as opções de pagamento, ...
+
+O objetivo desse tour é fazer uma grande "varredura" o mais rápido possível para identificar problemas que são fácilmente identificados.
+
+##### 3.2.1.2. Resumo dos Tours do Distrito de Negócios
+
+
 * Sistemas que dependem da inicialização e desligamento prontos pra uso.
 * 7 tours
 
@@ -50,7 +135,18 @@ Abordagem de aprendizagem simultânea. Simultâneo aprendizado, design e execuç
 | Identificar cada característica que infleuncia ou sofre influência nos dados. | Identificar falhas resultantes da execução dessas atividades. | Cobrir determinado objetivo de forma metódica, não dependendo do tempo e verificando o mais óbvio. |
 | Identificar possíveis pontos que esses dados são corrompidos no processamento. |  |  |
 
-### Distrito Histórico
+#### 3.2.2. Distrito Histórico
+
+##### 3.2.2.1. Tours (3)
+
+##### 3.2.2.1.1. Tour pelo bairro ruim
+
+##### 3.2.2.1.2. Tour pelo museu
+
+##### 3.2.2.1.3. Tour da versão anterior
+
+##### 3.2.2.2. Resumo dos Tours do Distrito Histórico
+
 * Tem como objetivo testar softwares legado.
 
 | Tour pelo bairro ruim | Tour pelo museu | Tour da versão anterior |
