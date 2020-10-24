@@ -95,3 +95,8 @@ Esse modelo assume que assume que o número de falhas por unidade de tempo é um
 > A probabilidade é calculada da seguinte forma:
 > 
 > P(X=k) = (e^-λ * λ^k) / (k!)
+
+[...]
+
+# 3. Conclusão
+
