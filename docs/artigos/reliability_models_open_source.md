@@ -1,5 +1,3 @@
-<div align='justify' style="width: 80%; margin: auto;">
-
 # Reliability models and open source software: an empirical study
 
 ## 1. Resumo
@@ -84,7 +82,7 @@ Esse modelo considera que a correção de uma falha irá impactar sempre da mesm
 
 ## 2.2.2. Modelo 2: Modelo de Processo não Homogênico de Poisson
 
-Esse modelo assume que assume que o número de falhas por unidade de tempo é uma variável aleatória independente de Poisson (...Seja lá o que significa isso...)
+Esse modelo assume que assume que o número de falhas por unidade de tempo é uma variável aleatória independente de Poisson, isso, 
 
 > **Distribuição de Poisson** (fala-se "Poassôm"):
 > É uma distribuição de probabilidade discreta de uma variável aleatória X que satisfaz às seguites condições:
@@ -97,7 +95,3 @@ Esse modelo assume que assume que o número de falhas por unidade de tempo é um
 > A probabilidade é calculada da seguinte forma:
 > 
 > P(X=k) = (e^-λ * λ^k) / (k!)
-
-
-
-</div>

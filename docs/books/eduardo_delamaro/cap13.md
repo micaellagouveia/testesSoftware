@@ -1,5 +1,3 @@
-<div align='justify' style="width: 80%; margin: auto;">
-
 # Capítulo 13 - Confiabilidade
 
 
@@ -594,4 +592,3 @@ Alguns dos principais modelos de confiabilidade de software amplamente citados n
 Finalmente, apresentamos um procedimento geral para o cálculo da confiabilidade de software e algumas ferramentas para seleção de modelos de confiabilidade e estimação de seus parâmetros. Apresentamos resumidamente aplicações de medidas da confiabilidade de software. 
 
 Novas abordagens em confiabilidade de software e áreas importantes de aplicação de confiabilidade de software, temas de pesquisa e desenvolvimento incluem: confiabilidade de software baseada em arquitetura; confiabilidade de sistemas baseados em componentes; confiabilidade de servidores e aplicações Web; confiabilidade de aplicações móveis. 
-</div>
