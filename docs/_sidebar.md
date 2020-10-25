@@ -18,3 +18,4 @@
     - [Gerência de Qualidade de Software](univesp/GerenciaQualidade.md)
 - **Arigos de Confiabilidade**
   - [Reliability models and open source software: an empirical study](artigos/reliability_models_open_source.md)
+  - [Effect of Code Coverage on Software Reliability Measurement](artigos/software-repository-and-their-open-problems.md)
