@@ -16,5 +16,5 @@
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
 - **Aulas UNIVESP**
     - [Gerência de Qualidade de Software](univesp/GerenciaQualidade.md)
-- **Arigos de Confiabilidade**
+- **Artigos de Confiabilidade**
   - [Reliability models and open source software: an empirical study](artigos/reliability_models_open_source.md)
