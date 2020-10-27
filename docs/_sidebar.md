@@ -16,3 +16,7 @@
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
 - **Aulas UNIVESP**
     - [Gerência de Qualidade de Software](univesp/GerenciaQualidade.md)
+- **Arigos de Confiabilidade**
+  - [Reliability models and open source software: an empirical study](artigos/reliability_models_open_source.md)
+  - [Effect of Code Coverage on Software Reliability Measurement](artigos/effect-of-code-coverage-on-software-reliability-measurement.md)
+  - [On Software Engineering Repositories and Their Open Problems](artigos/software-repository-and-their-open-problems)
