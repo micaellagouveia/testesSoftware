@@ -14,9 +14,9 @@ O CMM é definido pela SEI descreve uma estrutura de trabalho que possui todos o
 
 O modelo de processo CMM, baseia-se em cinco níveis de maturidade organizacional. Cada nível representa um estágio de maturidade dentro do processo de desenvolvimento de software. Cada organização tem seu nível individual de maturidade, refletindo seu grau de controle sobre o processo como um todo.
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/cmm.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/cmm.png" >
+</div>
 
 Nenhuma organização consegue sair do nível 1 e chegar ao nível 3 sem antes passar pelo nível 2. Cada nível é um pré-requisito para o outro e cada organização consegue excergar somente o que sua maturidade permite. Apesar disso, as organizações podem usar de maneira vantajosas processos descritos em níveis de maturidade superiores aos que se encontram. 
 
@@ -39,9 +39,9 @@ Um dos objetivos a serem alcançados no CMM-Nível 2 é tornar os processos de g
 
 Um efetivo processo de gerenciamento de software deve ser praticado, documentado, garantido, treinado, medido e constantemente melhorado.
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/KPAs.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/KPAs.png">
+</div>
 
 Projetos em organizações com CMM-Nível 2 têm controles básicos de gerenciamento de software. As estimativas de tempo, recursos e custos do software são baseadas nos históricos dos projetos anteriores e projetadas através dos requisitos estabelecidos no projeto atual. Os gerentes de software possuem um controle de rastreabilidade em relação aos custos, cronogramas, funcionalidades e defeitos. Os problemas são identificados na mesma etapa que são gerados, evitando a propagação de erros para fases posteriores.
 
@@ -84,8 +84,8 @@ Um dado importante que o SEI estima é que de acordo com o nível que a empresa 
 
 A medida que a empresa vai adquirindo maturidade, esses índices vão sendo gradativamente reduzindo de 55%, 35%, 20%, 10% até a empresa alcançar o nível 5 e reduzir esse patamar para 5%.
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/esforco.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/esforco.png" >
+</div>
 
 O esforço para promover um processo de qualidade de software é muito maior para empresas que possuem pouca maturidade organizacional. Isso pois essas organizações estão pouco preparadas para realizar atividades desse porte - não possuem processos bem estruturados, não há documentações adequadas e padronizadas; ainda não compreenderam completamente os benefícios dos processos de qualidade de software e testes a serem aplicados em todos os ciclos do desenvolvimento; a maioria das pessoas acredita que os problemas do desenvolvimento são meramente tecnológicos, não necessitando de revisões dos processos e mudanças na cultura da empresa; não existe participação efetiva dos clientes e usuários nos processos de desenvolvimento, aumentando os riscos de o produto não atender às reais necessidades; a maior parte da organização é resistente à inovação do processo de desenvolvimento, pois acredita que o aperfeiçoamento é uma atividade impraticável.

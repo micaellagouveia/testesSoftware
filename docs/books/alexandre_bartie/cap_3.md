@@ -81,9 +81,9 @@ Processo que se concentra no monitoramento e desempenho dos resultados do projet
 
 Um dos erros mais comuns sobre qualidade é acreditar que "Testes de Software" se trata de uma etapa de período fixo no ciclo de desenvolvimento de software, geralmente posicionada após a etapa de implementação.
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/img-3.1.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/img-3.1.png" >
+</div>
 
 Essa visão sobre "Testes de Software" se opõe ao princípio de identificar os erros nas fases iniciais do processo de desenvolvimento, o esforço para obter a qualidade, e consequentemente a identificação de erros está ocorrendo uma fase tardia do ciclo de desenvolvimento.
 
@@ -99,9 +99,9 @@ Se os erros estão concentrados nas fases iniciais do ciclo de desenvolvimento, 
 
 Ter um processo de garantia da qualidade em todo o ciclo de desenvolvimento do software permite que um número maior de defeitos sejam descobertos antecipadamente, evitando a migração destes para as fases seguintes. Isso fará com que os custos referentes às não-conformidades caiam drasticamente, tornando o processo mais estável e menos caótico. Também fará com que os prazos para implantação do software sejam reduzidos em função do menor índice de retrabalhos, refletindo em um aumento na satisfação do cliente (produto mais confiável), uma equipe mais motivada (menos retrabalho e atividades mais construtivas) e uma empresa mais fortalecida (clientes querem trabalhar com empresas que honram prazos e compromissos).
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/img-3.2.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/img-3.2.png" >
+</div>
 
 Dessa forma, a resposta à pergunta _Onde devemos aplicar Qualidade?_ torna-se simples. Devemos aplicar qualidade em todo o ciclo de desenvolvimento. A cultura da qualidade cria um ambiente favorável para prevenção e detecção de erros, transformando o processo de desenvolvimento em uma atividade com etapas monitoradas e constantemente avaliadas, tornando o processo confiável.
 
@@ -135,9 +135,9 @@ Um dos maiores desafios é estabelecer um modelo de custos relacionados à impla
 
 Em todos os projetos a serem construídos ou modificados, todas as atividades deveriam ter uma política de alocação de custos semelhantes ao modelo apresentado. Será uma grande surpresas aos proprietários, gerentes, profissionais e clientes perceberem quanto representa percentualmente os custos de não-conformidade de um processo de desenvolvimento.
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/img-3.3.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/img-3.3.png" >
+</div>
 
 ## 3.7. O Custo da Propagação dos Defeitos
 
@@ -149,9 +149,9 @@ Em um mundo sem restrições, a decisão de implementar um processo completo de 
 
 Outros aspectos estão também relacionados à maturidade organizacional do cliente, ou seja, se esse ainda não possui um processo estruturado de desenvolvimento de software, com certeza não será possível estabelecer um processo de qualidade completo. A falta de documentos básicos inviabilizam esse processo, pois o desenvolvimento é tão informaç que não haverá documentações e especificações a serem inspecionadas.
 
-<p align="center">
-  <img src="books/alexandre_bartie/imgs/img-3.4.png" width="200">
-</p>
+<div align="center">
+  <img src="books/alexandre_bartie/imgs/img-3.4.png" >
+</div>
 
 * **Auditoria**: Nível superficial de um processo de qualidade. Verifica se as atividades e documentos estão respeitando as estruturas e padrões estabelecidos. Trata-se de uma análise do esqueleto do processo. Não é avaliada a qualidade dos documentos gerados nem do software desenvolvido pela equipe.
 * **Produto Acabado**: Nível mais praticado nas organizações. O processo de qualidade somente é iniciado após o software ter sido transformado em produto tecnológico. São aplicados todos os testes possíveis no produto acabado.
