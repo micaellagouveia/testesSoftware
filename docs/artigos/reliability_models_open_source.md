@@ -74,9 +74,9 @@ Nesse modelo se pressume que o tempo decorrido entre as falhas obedece uma distr
 
 A figura abaixo mostra o impacto de encontrar e corrigir uma falha na taxa de risco. Pode-se ver que cada falha que é descoberta modifica a constante de proporcionalidade, que consequentemente reduz a taxa de risco do software.
 
-<p align="center">
-  <img src="artigos/static/kumar-dwivedi-tiwari/img-1.png" width="200">
-</p>
+<div align="center">
+  <img src="artigos/static/kumar-dwivedi-tiwari/img-1.png" >
+</div>
 
 Esse modelo considera que a correção de uma falha irá impactar sempre da mesma forma a confiabilidade do software.
 

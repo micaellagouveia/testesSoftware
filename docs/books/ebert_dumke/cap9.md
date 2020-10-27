@@ -80,9 +80,9 @@ Um modelo com a intensidade de falha constante, um processo homogêneo de Poisso
 
 Para um subconjunto distinto de testes durante o teste do subsistema e do sistema, o `modelo de tempo de execução exponencial não homogênio básico (ENHPP)` pode aproximar as estimativas de taxa de falhas com boa precisão. Para validar as previsões feitas no passado, as taxas informadas após o momento em que a previsão foi feita podem ser comparadas com as que foram extrapoladas. (Figura 9.4)
 
-<p align="center">
+<div align="center">
   <img src="books/ebert_dumke/static/fig-9-4.png">
-</p>
+</div>
 
 A confiabilidade do software em desenvolvimento e do software em operação está em algum lugar entre os dois modelos (modelo de falhas infinitas e falhas finitas). As falhas podem ocorrer como resultado da interação entre vários erros no código (dois erros em sequência pode acarretar em uma falha, por mais que nenhum individualmente gere um falha). Outro fenômeno que observamos nos sistemas de comunicação são as falhas dependentes de carga que normalmente ocorrem depois que as determinada parte do código é executada exaustivamente. Nesses casos, os processos de falhas individuais não seguem uma distribuição de Poisson, uma vez que a execução ou sequência de carregamento por si só não é um proceso de Poisson. Este padrão muitas vezes faz com que o software de comunicação falhe uma vez que o ambiente muda, embora o software pareça operar sem falhas durante o teste.
 
@@ -92,6 +92,6 @@ Para tornar as coisas mais fáceis, a teoria fornece uma lei dos grandes número
 
 O objetivo geral, obviamente, não é realizar uma previsão exata da taxa de falha, mas estar o mais próximo possível de uma margem distinta permitida pelos contratos do cliente ou pela capacidade de manutenção disponível. Um exemplo de um perfil de confiabilidade combinado usado na prática, resumido de váris modelos, é mostrado na figura abaixo.
 
-<p align="center">
+<div align="center">
   <img src="books/ebert_dumke/static/fig-9-5.png">
-</p>
+</div>

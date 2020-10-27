@@ -77,15 +77,15 @@ Considerando o domínio de saída, têm-se duas alternativas:
 
 Essa informação pode ser usada para fazer outra partição no domínio de entrada: uma contendo caracteres que são encontrados na cadeia e a outra contendo caracteres que não pertencem à cadeia. A Tabela 2.1 apresenta as classes de equivalência identificadas.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-2-1.png" width="700">
-</p>
+</div>
 
 Identificadas as classes de equivalência, escolhem-se, arbitrariamente, elementos de cada classe e os casos de teste podem ser definidos como está apresentado na Tabela 2.2.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-2-2.png" width="700">
-</p>
+</div>
 
 #### 2.3.1.2 Avaliação do critério
 
@@ -110,9 +110,9 @@ Embora não existam diretrizes bem definidas que levem à determinação dos dad
 
 Considerando as classes de equivalência segundo o critério Particionamento de Equivalência (Tabela 2.1) e lembrando que devem ser explorados os limites tanto do ponto de vista de entrada como de saída, os casos de teste que satisfazem o critério Análise do Valor Limite são apresentados na Tabela 2.3. Observa-se que a linha dupla na tabela denota uma segunda execução do programa, pois só assim todos os casos de teste necessários para satisfazer o critério podem ser exercitados.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-2-3.png" width="700">
-</p>
+</div>
 
 Um outro exemplo que caracteriza bem a diferença entre o Particionamento de Equivalência e Análise do Valor Limite é o exemplo do triângulo, dado por Meyers. Para que três valores representem um triângulo, eles devem ser inteiros maiores que zero e a soma de quaisquer desses dois valores deve ser maior que o terceiro valor. Assim, ao definirem-se as classes de equivalência, a válida seria aquela em que essa condição é satisfeita e a classe inválida seria aquela em que a soma de dois dos valores não é maior que o terceiro valor. Para o Particionamento de Equivalência, dois dados de teste seriam 3; 4; 5 e 1; 2; 4 para as classes válida e inválida, respectivamente.
 
@@ -183,9 +183,9 @@ Além desses casos, como foi dito inicialmente, o critério Funcional Sistemáti
 
 Como o critério Funcional Sistemático estende os critérios Particionamento de Equivalência e Análise do Valor Limite, os casos de testes definidos nas Tabelas 2.2 e 2.3 deveriam ser selecionados. Além desses, os casos de teste da Tabela 2.4 seriam também desenvolvidos.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-2-4.png" width="700">
-</p>
+</div>
 
 #### 2.3.3.2 Avaliação de Critério
 
@@ -227,13 +227,13 @@ O Grafo Causa-Efeito correspondente é apresentado na Figura 2.2. Para verificar
 
 Apesar de o grafo da Figura 2.2 corresponder ao exemplo, ele contém uma combinação de causas que é impossível de ocorrer, uma vez que “1” e “2” não podem possuir o valor 1 simultaneamente. Esta e outras situações ocorrem comumente na prática. Para contornar esses problemas a notação da Figura 2.3 pode ser utilizada, sendo que elas representam o seguinte:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/figura-2-2.png" width="700">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/figura-2-3.png" width="700">
-</p>
+</div>
 
 * Restrição E: no máximo um entre “1” e “2” pode ser igual a 1 (ou seja, “1” e “2” não podem ser 1 simultaneamente).
 * Restrição I: no mínimo um entre “1”, “2” e “3” deve ser igual a 1 (ou seja, “1”, “2” e “3” não podem ser 0 simultaneamente).
@@ -243,9 +243,9 @@ Apesar de o grafo da Figura 2.2 corresponder ao exemplo, ele contém uma combina
 
 Assim, considerando a representação dessas restrições e considerando também ser impossível que as causas “1” e “2” estejam presentes simultaneamente, mas que é possível ambas não estarem presentes, o grafo da Figura 2.2 é refeito para denotar essa situação e é apresentado na Figura 2.4.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/figura-2-4.png" width="700">
-</p>
+</div>
 
 - 1. Quando a nó for do tipo OR e a saída deva ser 1, nunca atribuir mais de uma entrada com valor 1 simultaneamente. O objetivo disso é evitar que alguns erros não sejam detectados pelo fato de uma causa mascarar outra.
 2. Quando o nó for do tipo AND e a saída deva ser 0, todas as combinações de entrada que levem à saída 0 devem ser enumeradas. No entanto, se a situação é tal que uma entrada é 0 e uma ou mais das outras entradas é 1, não é necessário enumerar todas as condições em que as outras entradas sejam iguais a 1.
@@ -253,9 +253,9 @@ Assim, considerando a representação dessas restrições e considerando também
 
 Seguindo essas diretrizes, a tabela de decisão para o grafo apresentado na Figura 2.4 é apresentada na Figura 2.5.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/figura-2-5.png" width="700">
-</p>
+</div>
 
 O passo final é converter cada coluna da tabela de decisão em um caso de teste, como será visto no exemplo a seguir.
 
@@ -277,17 +277,17 @@ O Grafo Causa-Efeito desse exemplo é apresentado na Figura 2.5, e a respectiva 
 
 Agora, transformam-se as informações extraídas da tabela de decisão em casos de teste, que estão apresentados na Tabela 2.5. Por exemplo, o 0 na causa 1, na primeira coluna, significa que um inteiro positivo no intervalo 1-20 não está presente, ou seja, o valor de T deve ser diferente de um inteiro nesse intervalo, e assim por diante.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-2-5.png" width="700">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/figura-2-6.png" width="700">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/figura-2-7.png" width="700">
-</p>
+</div>
 
 #### 2.3.4.2 Avaliação do Critério
 
@@ -310,9 +310,9 @@ Além disso, os próprios critérios apresentam algumas limitações, como já f
 
 Para ilustrar esse fato, o exemplo utilizado neste capítulo foi implementado em C e os casos de teste gerados para atender os critérios funcionais foram usados para avaliar a cobertura em relação ao critério Análise de Mutantes, o qual será apresentado no Capítulo 5. Essa avaliação foi realizada utilizando-se a ferramenta Proteum e os casos de teste foram explorados de duas maneiras diferentes: isoladamente, isto é, calculou-se o escore de mutação em relação à aplicação de cada conjunto de casos de teste funcional e calculou-se o escore de mutação adicionando-se ao conjunto de casos de teste de um dos critérios os casos de teste adequados a outro critério funcional, de forma cumulativa. Na Tabela 2.6 apresentam-se esses dados. Foi gerado um total de 863 mutantes, dos quais 66 são equivalentes. Recomenda-se que, após a leitura do Capítulo 5, o leitor volte a avaliar esses resultados.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-2-6.png" width="700">
-</p>
+</div>
 
 Aplicando-se os conjuntos de casos de teste separadamente, o menos efetivo para distinguir os mutantes foi o conjunto do critério Grafo Causa-Efeito, enquanto de forma cumulativa o menos efetivo foi o do Particionamento de Equivalência. Independentemente da forma de aplicação, o mais efetivo foi o conjunto gerado a partir do Teste Sistemático, como era de se esperar, visto que ele foi proposto justamente com a intenção de melhorar a cobertura conseguida com conjuntos de teste funcionais em relação às outras técnicas de teste.
 

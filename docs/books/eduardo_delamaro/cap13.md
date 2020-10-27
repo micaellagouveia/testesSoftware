@@ -50,15 +50,15 @@ No estudo sobre confiabilidade de software, a variável aleatória de interesse 
 
 A probabilidade de que haja uma falha no software em decorrência do tempo t é definida como:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-0.png" width="500">
-</p>
+</div>
 
 em que f(t) é a função densidade de probabilidade e F (t) é a função distribuição de probabilidades, da variável aleatória T . Por conseqüência, a probabilidade de que não ocorra falha no software até o tempo t é definida como:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-1.png" width="500">
-</p>
+</div>
 
 
 
@@ -68,9 +68,9 @@ Na literatura clássica, a definição sobre confiabilidade amplamente adotada �
 
 Assim, a função Confiabilidade, também chamada de função de sobrevivência de um software, é definida como:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-2.png" width="500">
-</p>
+</div>
 
 Quando uma base de tempo é determinada, as falhas no software podem ser expressas por várias funções, como: função Taxa de Talhas, função de Falhas Acumuladas, função Intensidade de Falhas, tempo médio para falhas (MTTF) e tempo médio entre falhas (MTBF).
 
@@ -81,15 +81,15 @@ Para determinar o comportamento de falhas no software, basta observar o comporta
 Para descrever o ritmo de ocorrência das falhas em um sistema, a taxa de falhas é um conceito bastante utilizado. Teoricamente, a taxa de falhas é definida como a probabilidade de que uma falha por unidade de tempo ocorra num intervalo [t, t + Δt], dado que o sistema não
 falhou até o tempo t. Na prática, a taxa de falhas é a razão entre o incremento do número de falhas e o incremento de tempo correspondente. Assim, usando a probabilidade condicional, tem-se que:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-3.png" width="500">
-</p>
+</div>
 
 A taxa de falhas instantânea, Z(t), também conhecida como taxa de risco associada à variável aleatória T , é definida como:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-4.png" width="500">
-</p>
+</div>
 
 Ou seja, a taxa de risco é definida como o limite da taxa de falhas quando o intervalo Δt tende a zero (Δt → 0).
 
@@ -103,9 +103,9 @@ A Região II, conhecida como período de vida útil do sistema ou fase de opera�
 
 A Região III representa a fase de desgaste do sistema, caracterizada pelo crescimento na taxa de falhas em função do tempo.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/fig-13-1.png" width="600">
-</p>
+</div>
 
 A confiabilidade de software é semelhante à confiabilidade de hardware, tendo em vista que ambas são processos probabilísticos e podem ser descritas por distribuições de probabilidades. Contudo, a confiabilidade de software é diferente da confiabilidade de hardware no sentido de que o software não se desgasta com o tempo, ou seja, a confiabilidade não decresce com o tempo. Conseqüentemente, a Região III não se aplica à confiabilidade de software. No software, geralmente, a confiabilidade cresce na fase de teste e na fase de operação, desde que as falhas sejam removidas quando detectadas. No entanto, pode ocorrer um decréscimo na confiabilidade devido a alterações abruptas no ambiente de operação do sistema ou modificações incorretas na manutenção.
 
@@ -117,9 +117,9 @@ A taxa de falhas ideal para o software é decrescente. A Figura 13.2 dá uma id�
 
 Ao se observar o comportamento da taxa de falhas em algum ponto, por meio de evidência estatística, é possível prever o comportamento da taxa de falhas em um tempo futuro. Com isso, os modelos de confiabilidade de software podem prever o tempo adicional necessário para o teste do software até que se atinja o objetivo especificado – a taxa de falhas desejada. Pode-se também estimar a confiabilidade ao término do teste.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/fig-13-2.png" width="500">
-</p>
+</div>
 
 Quando se considera crescimento de confiabilidade, uma medida usual é a confiabilidade condicional. Dado que o sistema teve n−1 falhas, a confiabilidade condicional é a função de sobrevivência associada à n-ésima falha do sistema. A confiabilidade condicional é de interesse quando o sistema está em fase de desenvolvimento, período em que se observa o tempo para a próxima falha. Quando o sistema está liberado e em fase operacional, o interesse passa a ser o intervalo de tempo livre de falhas e, nesse caso, os instantes de falha não são necessariamente condicionados às falhas anteriores. O interesse é a confiabilidade em um dado intervalo de tempo, independentemente do número de falhas ocorridas anteriormente.
 
@@ -135,9 +135,9 @@ O processo aleatório pode ser completamente especificado, assumindo-se uma dist
 
 Como M (t) assume somente valores inteiros, as correspondentes distribuições de probabilidades devem ser do tipo discretas. As distribuições de probabilidades Poisson e Binomial são bastante utilizadas para descrever o processo aleatório M(t).
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/fig-13-3.png" width="500">
-</p>
+</div>
 
 #### 13.2.1.4. Função Intensidade de Falhas
 
@@ -161,9 +161,9 @@ Um meio simples de se medir a confiabilidade de um software é observar o tempo 
 
 Nesse contexto, o MTTF é próximo de zero quando a taxa de falhas do software é grande e próximo de 1 quando a taxa de falhas do software é pequena. Utilizando essa relação, pode-se calcular a medida da confiabilidade de um software como: 
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-5.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/img-13-5.png" >
+</div>
 
 Em um processo de teste do software, à medida que ocorrem as falhas e removem-se os defeitos, a confiabilidade é uma medida que informa se o software está sendo ou não aperfeiçoado. Se os tempos entre as falhas permanecem os mesmos, então tem-se uma con- fiabilidade estável. Se os tempos entre as falhas aumentam, então tem-se um crescimento da confiabilidade do software.
 
@@ -171,15 +171,15 @@ A confiabilidade do software também pode ser medida quando se conhece a distrib
 
 Pode-se desejar, também, saber a probabilidade de que o software opere sem falhas em um intervalo de tempo [t1 , t2]. Assim, a confiabilidade do software nesse intervalo pode ser calculada como:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-6.png" width="300">
-</p>
+</div>
 
 Pode ser mostrado que:
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-7.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/img-13-7.png" >
+</div>
 
 ### 13.2.3. Função de Confiabilidade
 
@@ -193,19 +193,19 @@ A distribuição exponencial é a distribuição de probabilidades mais conhecid
 
 As funções Densidade de Probabilidade f (t) e Distribuição de Probabilidade F (t) têm as formas:
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-8.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/img-13-8.png" >
+</div>
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-9.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/img-13-9.png" >
+</div>
 
 em que t > 0 e λ > 0, λ é um parâmetro. A Figura 13.6 ilustra o comportamento da função Densidade de Probabilidades Exponencial.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/fig-13-6.png" width="600">
-</p>
+</div>
 
 A região hachurada na Figura 13.6 representa a probabilidade de não ocorrência de falhas até o tempo t o . Observa-se que para pequenos intervalos de tempo é grande a probabilidade de não ocorrência de falhas. Por outro lado, para grandes intervalos de tempo é pequena a probabilidade de não ocorrência de falhas.
 
@@ -219,17 +219,17 @@ Para uma certa classe de modelos de confiabilidade de software, a suposição é
 
 A distribuição de probabilidades de Weibull, como outras distribuições, tem uma grande aplicação em confiabilidade devido à sua adaptabilidade. Dependendo dos valores dos parâmetros, pode-se ajustar a muitos conjuntos de dados sobre falhas. Ao utilizar essa distribuição, assume-se que, no processo de falhas do software, a variável aleatória T (tempo entre falhas) segue a distribuição de Weibull.
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/fig-13-7.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/fig-13-7.png" >
+</div>
 
 #### 13.2.3.3. Distribuição Gamma
 
 A distribuição Gamma tem propriedades semelhantes às da distribuição de Weibull. Com variações nos parâmetros, essa distribuição pode-se ajustar a vários conjuntos de dados de falhas. A função Densidade de Probabilidades f(t) tem a forma:
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/fig-13-8.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/fig-13-8.png" >
+</div>
 
 ## 13.3. Modelos de Confiabilidade
 
@@ -298,13 +298,13 @@ Nesta seção são apresentados alguns dos mais importantes modelos de confiabil
 
 O propósito desta seção é apresentar um levantamento dos principais modelos, considerando as abordagens existentes de modelagem e estimação da confiabilidade de software. Não se pretende esgotar o assunto, mas, em uma forma sucinta, apresentar as suposições fundamentais do modelo, os dados necessários para sua aplicação e, finalmente, sua forma funcional. Não se apresentam os detalhes sobre a estimação dos parâmetros de cada modelo nem a dedução matemática de sua forma funcional.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-13-5.png" width="700">
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/tabela-13-6.png" width="700">
-</p>
+</div>
 
 ### 13.4.1. Modelos de Implante de Defeitos
 
@@ -312,15 +312,15 @@ Nesta subseção são apresentados os modelos que se baseiam na inserção de de
 
 Uma outra técnica proposta por Rudner emprega o procedimento de teste de dois estágios. O programa é entregue a uma equipe de teste que descobre n defeitos. Uma segunda equipe testa novamente o programa e descobre r defeitos, sendo que um número k desses defeitos também foi detectado pela primeira equipe. Assim, usando uma distribuição Hipergeométrica, o estimador de máxima verossimilhança para o número total, N , de defeitos no programa tem a forma:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-10.png" width="100">
-</p>
+</div>
 
 Basin propõe a seguinte técnica: supõe que um programa consiste em M comandos, dos quais n são aleatoriamente selecionados para se introduzirem defeitos. Se r comandos são escolhidos ao acaso e testados, sendo k1 com defeitos inerentes e k2 com defeitos implantados, então pode ser mostrado que o estimador de máxima verossimilhança do número total N de defeitos no programa é dado por:
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-11.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/img-13-11.png" >
+</div>
 
 Algumas críticas são feitas a essas técnicas. Na prática, não é tão simples implantar defeitos artificiais que sejam equivalentes aos defeitos inerentes em termos de dificuldade de detecção. Geralmente, é muito mais simples detectar os defeitos que foram implantados. Com isso, o número de defeitos inerentes pode ser subestimado. Outro problema é que dificilmente pode-se dar ao luxo de dispor de duas equipes de teste para aplicar a técnica de teste de dois estágios. Além disso, essas técnicas não proporcionam uma medida de confiabilidade para o software dependente do tempo. A inconveniência, ou não, dessa dependência do tempo será discutida posteriormente em modelos baseados em cobertura do teste.
 
@@ -328,26 +328,26 @@ Algumas críticas são feitas a essas técnicas. Na prática, não é tão simpl
 
 Nesta subseção são apresentados os modelos que se baseiam no particionamento do domínio dos dados de entrada do software para se estimar a sua confiabilidade. Essa abordagem inclui procedimentos que estimam a confiabilidade corrente do programa estritamente baseada no número observado de execuções com sucesso (execuções sem falhas), em relação ao número total de execuções do programa. Nesta categoria, incluem-se, também, os procedimentos que usam dados de teste selecionados de acordo com a distribuição de probabilidades do perfil operacional de uso do programa. O domínio de entrada do programa é dividido em classes, e as probabilidades de cada classe são fixadas de acordo com o perfil de uso do programa. Como exemplo, vamos supor que o domínio de entrada de um programa seja o conjunto dos números inteiros positivos. Sabe-se antecipadamente que 25%, 35%, 30% e 10% são, respectivamente, as porcentagens dos dados de entradas referentes aos intervalos [0 – 1500], [1501 – 2500], [2501 – 3500] e [3501 e mais ]. Assim, em uma amostra aleatória de 200 casos de teste, 50, 70, 60 e 20 devem ser os números de casos de teste, respectivamentes selecionados, para representar cada um dos intervalos. Ou seja, a distribuição de probabilidades de seleção seria 0,25, 0,35, 0,30 e 0,1. A confiabilidade estimada para o programa será o número de execuções com sucesso sobre o valor 200. De uma forma geral, se N entradas são selecionadas de acordo com o perfil operacional e S são as execuções com sucesso (sem falhas), então a estimativa da confiabilidade do programa é dada por:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-12.png" width="100">
-</p>
+</div>
 
 Nesta abordagem, vários pesquisadores propuseram variações na forma de se estimar a confiabilidade.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-13.png" width="100">
-</p>
-<p align="center">
+</div>
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-14.png" width="100">
-</p>
+</div>
 
 em que L é o número de instruções de máquina submetido e W é o número médio de instruções por bits. Essa modificação normaliza o estimador pelo tamanho do programa e pelo tipo de máquina utilizada.
 
 Nelson propôs um modelo no qual n entradas são aleatoriamente selecionadas do domínio de entrada E = E i , i = 1, 2, 3, . . . , N ,sendo cada E i o conjunto de dados necessários para se fazer uma execução do programa. A amostra aleatória das n entradas é feita de acordo com a distribuição de probabilidades P i . O conjunto das probabilidades Pi; i = 1, 2, 3, ... , N é o perfil operacional do usuário. Se n e é o número de entradas cujas execuções resultam em falhas, então um estimador não viciado para a confiabilidade do software será:
 
-<p align="center">
-  <img src="books/eduardo_delamaro/static/img-13-15.png" width="200">
-</p>
+<div align="center">
+  <img src="books/eduardo_delamaro/static/img-13-15.png" >
+</div>
 
 Diversas outras maneiras de se calcular a estimativa da confiabilidade do programa foi proposta por outros autores como: Brown e Lipow, Corcoran, Weingarten e Zehna, e etc.
 
@@ -474,9 +474,9 @@ O modelo tipo Binomial está fundamentado nas seguintes suposições:
 - 5. a cobertura dos elementos requeridos pelo critério de seleção utilizado na avaliação dos dados é calculada à medida que os dados de teste são aplicados, a cada ocorrência de falha;
 - 6. a taxa de falhas condicional tem a seguinte forma funcional:
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/img-13-15.png" width="150">
-</p>
+</div>
 
 em que:
 - αi = α0 + α1ci é a cobertura normalizada, c i é o complemento da cobertura medida atingida com a aplicação dos ni dados de teste, 0 ≤ ci ≤ 1;
@@ -567,15 +567,15 @@ O critério de confiabilidade mínima desejada para o software é um critério e
 
 Devem-se levar em conta dois fatores para a avaliação de custos. O custo do teste do software e o custo de manutenção ou custo de falha no caso de uma liberação do software sem que se tenha atingido o nível de confiabilidade desejado. Esses dois tipos de custos variam em sentidos opostos. O ideal é fazer uma avaliação global que envolva o custo dos testes e o custo de falha. 
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/fig-13-9.png" width="600">
-</p>
+</div>
 
 A Figura 13.10 ilustra o comportamento da função Custo Global. O ideal é a localização do ponto mínimo, ou pelo menos a região próxima ao ponto mínimo do custo global.
 
-<p align="center">
+<div align="center">
   <img src="books/eduardo_delamaro/static/fig-13-10.png" width="600">
-</p>
+</div>
 
 O momento de liberação do software deve ser tal que minimize a soma desses dois componentes do custo.
 

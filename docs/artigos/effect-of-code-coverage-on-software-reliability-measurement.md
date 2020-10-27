@@ -63,9 +63,9 @@ Esta seção descreve um experimento que foi conduzido no ambiente de simulaçã
 
 A figura abaixo mostra a estimativa de confiabilidade obtida aplicando os dados originais obtidos dos modelos Goel-Okumoto, Musa-Okumoto e as estimativas obtidas usando dados processados, GOe e MOe. Os resultados mostram que para 270000 unidades de teste-tempo a técnica proposta reduziu a superestimativa de confiabilidade dos modelos G-O e M-O de 33.5% para 0% e de 12.17% para 0.55%, respectivamente. Já para 300000 unidades de teste-tempo as estimativas foram de 29.3% para 2.86% para o modelo G-O e de 12.4% para 1.43% para o modelo M-O.
 
-<p align="center">
-  <img src="artigos/static/GO-MO-GOe-MOe.png" width="200">
-</p>
+<div align="center">
+  <img src="artigos/static/GO-MO-GOe-MOe.png">
+</div>
 
 ## 5. Aplicações
 
