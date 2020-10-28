@@ -17,6 +17,9 @@
 - **Livro Software Measurement** 
     - [Capítulo 9 - Defect Detection and Quality Improvement](books/ebert_dumke/cap9.md)
 
+- **Blog Posts**
+    - [Six barriers to open source adoption](blog-posts/six-barriers-to-open-source-adoption.md)
+
 
 - **Normas**
     - [ISO/IEC 25010](normas/iso_iec_25010.md)
