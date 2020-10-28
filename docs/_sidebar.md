@@ -27,3 +27,4 @@
   - [Effect of Code Coverage on Software Reliability Measurement](artigos/effect-of-code-coverage-on-software-reliability-measurement.md)
   - [On Software Engineering Repositories and Their Open Problems](artigos/software-repository-and-their-open-problems)
   - [Early Software Fault Prediction using Real Time Defect Data](artigos/early-software-fault-prediction-using-real-time-defect-data.md)
+  - [A Comparative Analysis of Software Reliability Growth Models using defects data of Closed and Open Source Software](artigos/a-comparative-analysis-of-software-reliability-growth-models-using-defects-data-of-closed-and-open-source-software.md)
