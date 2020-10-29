@@ -34,3 +34,5 @@
   - [Reliability Growth of Open Source Software using Defect Analysis](artigos/reliability-growth-of-open-source-software-using-defect-analysis.md)
   - [An Empirical analysis of Open Source Software Defects data through Software Reliability Growth Models](artigos/an-empirical-analysis-of-open-source-software-defects-data-through-software-reliability-growth-models.md)
   - [A Comparative Analysis of Software Reliability Growth Models using defects data of Closed and Open Source Software](artigos/a-comparative-analysis-of-software-reliability-growth-models-using-defects-data-of-closed-and-open-source-software.md)
+  - [Analyzing and Modeling Open Source Software Bug Report Data](artigos/analyzing_and_modeling_open_source_software_bug_report_data.md)
+
