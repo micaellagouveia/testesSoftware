@@ -16,6 +16,10 @@
     - [Capítulo 10 - Design de Componente](books/paul_goodman/software-metrics-best-practices.md)
 - **Livro Software Measurement** 
     - [Capítulo 9 - Defect Detection and Quality Improvement](books/ebert_dumke/cap9.md)
+- **Livro Software Reliability Models: A Selective Survey and New Directions** 
+    - [Capítulo 11 - Software Reliability Models:
+A Selective Survey and New
+Directions](books/siddhartha_dalal/cap11.md)
 
 - **Blog Posts**
     - [Six barriers to open source adoption](blog-posts/six-barriers-to-open-source-adoption.md)
