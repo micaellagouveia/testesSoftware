@@ -11,6 +11,7 @@
 - **Livro Introdução ao Teste de Software** 
     - [Capítulo 1 - Conceitos Básicos](books/eduardo_delamaro/cap1.md)
     - [Capítulo 2 - Teste Funcional](books/eduardo_delamaro/cap2.md)
+    - [Capítulo 3 - Teste Baseado em Modelos](books/eduardo_delamaro/cap3.md)
     - [Capítulo 13 - Confiabilidade](books/eduardo_delamaro/cap13.md)
 - **Livro Software Metrics: Best Practices for Successful IT Management** 
     - [Capítulo 10 - Design de Componente](books/paul_goodman/software-metrics-best-practices.md)
