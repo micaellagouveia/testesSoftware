@@ -96,3 +96,41 @@ Um SRGM com desempenho superior para uma determinada medida nas versões de um O
 <div align='center'>
     <img src='artigos/static/rossi-russo-succi/figura-04.png'>
 </div>
+
+## 5. Descobertas
+
+A seguir, relatamos os resultados dos três OSS. O modelo Yamada não está incluído porque sua análise não reporta resultados significativos.
+
+OpenSuse. Para todas as versões do OpenSuse, o modelo Weibull é o melhor em todas as medidas, exceto capacidade de previsão. Assim, podemos dizer que entre as versões ele representa os dados (Qualidade de ajuste), captura a maioria dos dados em pequena área de confiança (precisão de ajuste) e é preciso na determinação do número final de defeitos que determina parcialmente capacidade de previsão. Ou seja, não é o melhor para capacidade de previsão, portanto, não podemos usá-lo para prever o número total de defeitos no início do tempo. Na verdade, não há SGRMs que podem fazer isso, pois nenhum modelo supera as versões em capacidade de previsão.
+
+A predominância do modelo Weibull confirma os achados em ([7]) estendendo o resultado para outras medidas de precisão que não o Critério de Informação de Akaike. Na Tabela 4, relatamos as classificações da versão 11.0.
+
+Mozilla Firefox. O modelo Weibull domina em todas as versões para todas as medidas, exceto a precisão do ponto final e a precisão relativa de ajuste. Novamente, isso confirma e estende os resultados em ([7]). Na Tabela 5, ilustramos os valores das medidas da versão 1.5 do Mozilla Firefox. Os valores em negrito são os melhores. Nesta versão, o modelo Weibull tem o pior comportamento geral em comparação com as outras versões. No entanto, está no topo da classificação em três das seis medidas e com bom desempenho nas demais. O caso excepcional é o RPF que mede a área do intervalo de confiança de 95% ao longo do intervalo de tempo da série. Como medida de precisão, o RPF é subsidiário do CoF e é usado em combinação com ele. Assim, como modelos com baixo CoF são menos relevantes per se, o modelo de Weibull é o mais interessante, embora a razão CoF / RPF não seja a mais alta. O modelo Weibull não é o melhor para previsão, entretanto. Isso é verdade para todas as versões e, em particular, no caso do AFP para a versão 1.5 na Tabela 5.
+
+OpenOffice.org. O modelo Weibull é novamente o melhor modelo em todas as medidas de precisão e previsão. Em particular, para CoF, o modelo supera 70% das vezes entre as versões.
+
+A predominância do modelo Weibull em tantas versões como no OpenOffice.org é definitivamente significativa.
+
+Comparando os resultados das três aplicações, podemos dizer que:
+
+- Para Goodness of fit (R square e AIC) o modelo de Weibull confirma sua superioridade de acordo com o trabalho de Li et al. ([7]). O modelo representa bem os dados e o padrão Weibull pode ser usado para representar versões futuras.
+
+- Para precisão de ajuste, o intervalo de confiança de 95% do modelo Weibull é o melhor na captura de dados dentro de seu intervalo de confiança de 95% (CoF), embora às vezes com uma densidade pobre (ou equivalentemente em um grande intervalo de confiança, RPF). Esta é uma medida de disseminação de dados ao redor do modelo, também levando em consideração sua variação em seu intervalo de confiança. Qualquer variação significativa do modelo ainda representa os dados com precisão suficiente. Isso pode ser útil quando discutimos o tempo de ocorrências nos repositórios de código aberto. O tempo relatado nos repositórios (tempo do calendário) pode não se referir ao tempo real em que o usuário teve uma falha. Pode ter ocorrido algum atraso. Como tal, o resultado para Precisão de ajuste, mesmo que forneça uma resposta positiva para o modelo Weibull, não é completamente satisfatório e uma análise de sensibilidade de Monte Carlo sobre o tempo para cada versão será questão de trabalho futuro.
+
+- Para capacidade preditiva, o modelo Weibull é definitivamente bom para estimar o número total final de falhas (AFP), mas não pode ser usado - como qualquer outro SRGM - para previsão antecipada (PA). Para este propósito, outras abordagens podem ser consideradas em combinação ([1], [8], [9]). A falta de um padrão para PA significa ainda que na maioria das versões dos três OSS há um baixo aumento da taxa de detecção de falha como na Fig. 2 (com ou sem efeito de aprendizagem) de modo que é impossível prever o número total de falhas de uma versão no estágio inicial do processo de relatório de falhas. Assim, o caso da Fig. 3, onde aparece um aumento repentino e precoce da taxa de detecção, é menos frequente nas versões dos três produtos. A Fig. 2 representa melhor os dados, pois após 300 dias o número de falhas ainda está longe de ser próximo ao número total final da versão.
+
+## 6. Limitações e trabalho futuro
+
+Durante nossa inspeção, entendemos que o sistema de rastreamento de bugs é usado regularmente pela equipe interna do projeto. Os membros da equipe interna conhecem melhor o aplicativo, portanto seus relatórios podem não representar relatórios típicos de falha do usuário final. Embora tenhamos usado algumas medidas para limitar esse viés (seção 4.1), como não pudemos diferenciar os problemas relatados pela equipe interna e pelo resto do mundo, não podemos garantir que o conjunto de dados seja um conjunto de dados de falhas relatadas apenas no final -Comercial. Em qualquer caso, como consideramos os relatórios emitidos somente após a data de lançamento, os relatórios dos membros da equipe interna referem-se a um período operacional do OSS e, como tal, contribuem para algo existente para a confiabilidade geral do OSS.
+
+A data do relatório pode não ser exatamente a data da descoberta da falha. Pode ter havido algum atraso no relato dos problemas e - dependendo do repositório - na atribuição da data de abertura durante a moderação do problema. Isso pode criar um ruído no tempo e será assunto para pesquisas futuras.
+
+O número de versões, o número e os tipos de SRGMs e as janelas de tempo das observações são diferentes nos três OSS. Isso ocorreu devido a algumas restrições de tempo, a disponibilidade dos dados nos repositórios e os valores ausentes para as medidas na Tabela 1. Como não pretendemos comparar os três OSS, queremos entender se existe um padrão de confiabilidade em cada OSS, essa diferença não é crucial.
+
+## 7. Conclusões
+
+O objetivo deste artigo foi apresentar uma abordagem para investigar a confiabilidade do OSS com o crescimento da confiabilidade do software. Usamos repositórios on-line abertos para coletar dados de três projetos diferentes. Limpamos intensamente os dados que coletamos para limitar a tendência associada à natureza aberta desses repositórios.
+
+Descobrimos que a teoria clássica do crescimento da confiabilidade do software é apropriada para tais dados e é um bom instrumento para modelar ocorrências de falha entre versões de software.
+
+Descobrimos que o modelo Weibull é o melhor modelo que se ajusta aos dados em todas as versões para cada OSS (Goodness of Fit) com uma baixa porcentagem de outliers (Precision of Fit). Isso confirma os resultados obtidos em ([7]) para o Akaike Information Criterion e revela um padrão comum de confiabilidade de software para os três OSS. Ou seja, o modelo Weibull é o melhor SRGM que representa as ocorrências de falha nos três produtos de código aberto. É um exemplo de curva em forma de S e, como tal, indica uma fase inicial de aprendizagem na qual a comunidade de usuários finais e revisores do projeto de código aberto não reage prontamente ao novo lançamento. Essa lentidão com que as falhas são reportadas pode ter várias causas como, por exemplo, o desconhecimento do projeto ou sua complexidade. Dada a existência de lançamentos candidatos e versões intermediárias, era de se esperar que a comunidade estivesse pronta para relatar as falhas logo após a data de lançamento ao público. Mas a curva de aprendizado é diferente em três OSS.
