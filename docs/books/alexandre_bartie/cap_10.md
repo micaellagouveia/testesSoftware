@@ -1,6 +1,6 @@
 # Capítulo 10 - Analisando Cada Fase dos Testes de Verificação
 
-Cada fase do projeto de software cumpre uma importante etapa de entendimento do problema e da definição de uma solução mais adequada às necessidades do cliente. Cabe ao processo de qualidade de software garantir que cada etapa está sendo concluída adequadamente para que a etapa posterior seja desempenhada da forma mais tranqüila e produtiva possível.
+Cada fase do projeto de software cumpre uma importante etapa de entendimento do problema e da definição de uma solução mais adequada às necessidades do cliente. Cabe ao processo de qualidade de software garantir que cada etapa está sendo concluída adequadamente para que a etapa posterior seja desempenhada da forma mais tranquila e produtiva possível.
 
 A etapa de verificação tem importância fundamental no processo de qualidade, pois focaliza suas ações nas etapas iniciais do projeto, nas quais geralmente ocorre a maior incidência de defeitos geralmente associados a definições erradas ou a falhas nas decisões realizadas.
 
@@ -150,7 +150,7 @@ Uma checklist de verificação da análise e modelagem deverá existir para cada
 O critério de finalização da fase de análise e modelagem deve garantir que a solução tecnológica que foi modelada atende adequadamente a todos os requisitos dos clientes, além de incorporar características que deixam a arquitetura flexível e aderente a futuras mudanças. Essa arquitetura deverá ser validada com toda a equipe de profissionais, inclusive a equipe técnica do cliente, que discutirá todos os pontos referentes à utilização da solução modelada. Alguns critérios que poderiam ser empregados para finalizar essa fase são: 
 
 - Diagramas estáticos (classes e objetos) criados e revisados.
-- Diagramas dinâmicos (estados, seqüência e atividades) criados e revisados.
+- Diagramas dinâmicos (estados, sequência e atividades) criados e revisados.
 - Diagramas de distribuição (componentes e implantação) criados e revisados.
 
 ### 10.4. Verificação da Implementação
@@ -201,7 +201,7 @@ Podemos empregar uma ferramenta cujo objetivo é realizar, de forma automática,
 
 Será necessário parametrizar a ferramenta com as práticas de codificação da organização, como padrões de variáveis, bibliotecas de uso comum, padrões de internacionalização, regras de portabilidade entre versões de sistemas operacionais, entre outros.
 
-A ferramenta irá melhorar a qualidade final do código-fonte, uma vez que conduz o programador a utilizar padrões conhecidos de trabalho, facilitando o entendimento e, conseqüentemente, a manutenção dos códigos-fonte.
+A ferramenta irá melhorar a qualidade final do código-fonte, uma vez que conduz o programador a utilizar padrões conhecidos de trabalho, facilitando o entendimento e, consequentemente, a manutenção dos códigos-fonte.
 
 #### 10.4.3.2. Análise da Complexidade do Código
 
