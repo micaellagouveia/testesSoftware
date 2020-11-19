@@ -28,9 +28,9 @@ Outro fator importante é como individualmente cada revisor está conduzindo seu
 
 A utilização de checklists auxilia na uniformização e padronização do que será avaliado e dos padrões esperados em cada documentação. Esse instrumento orienta os trabalhos dos revisores e possibilita uma forma única de abordar os documentos e atividades a serem auditadas.
 
-### 8.2.3. Continuidade e Freqüência
+### 8.2.3. Continuidade e Frequência
 
-É comum que as atividades de verificação somente ocorram nos estágios iniciais do projeto, pois são as fases em que é gerado o maior número de documentos e registros de informações. No entanto, é natural que o projeto sofra a inserção de melhorias ou mesmo uma reestruturação de aspectos fundamentais do negócio, de modo a interferir nas estruturas e definições estabelecidas. Isso significa que os projetos estão sendo modificados sem que ocorra uma nova onda de revisões com o objetivo de avaliar se o que está sendo proposto está coerente e que todos os impactos da mudança estejam bem claros a todas as áreas envolvidas. As atividades de verificação devem ser executadas sempre que o projeto sofrer mudanças, de forma a manter a integridade das documentações e, conseqüentemente, garantir que todas as decisões tomadas sejam devidamente analisadas e compartilhadas pelas áreas interessadas.
+É comum que as atividades de verificação somente ocorram nos estágios iniciais do projeto, pois são as fases em que é gerado o maior número de documentos e registros de informações. No entanto, é natural que o projeto sofra a inserção de melhorias ou mesmo uma reestruturação de aspectos fundamentais do negócio, de modo a interferir nas estruturas e definições estabelecidas. Isso significa que os projetos estão sendo modificados sem que ocorra uma nova onda de revisões com o objetivo de avaliar se o que está sendo proposto está coerente e que todos os impactos da mudança estejam bem claros a todas as áreas envolvidas. As atividades de verificação devem ser executadas sempre que o projeto sofrer mudanças, de forma a manter a integridade das documentações e, consequentemente, garantir que todas as decisões tomadas sejam devidamente analisadas e compartilhadas pelas áreas interessadas.
 
 ### 8.2.4. Revisores Experientes
 

@@ -12,7 +12,7 @@ A missão de descobrir defeitos, quando tratada na dimensão e com a importânci
 
 ## 7.2. Garante Ações Corretivas no Ciclo de Desenvolvimento
 
-Em um projeto de desenvolvimento no qual o processo de garantia da qualidade do software não está sendo empregado, os erros são produzidos continuamente, mas ninguém está administrando sua freqüência, reincidência ou gravidade. Ninguém está analisando as áreas do software que estão sofrendo maior incidência de problemas de forma a estudar as origens “reais” dos problemas – erros são apenas sintomas, devemos localizar as reais causas dos problemas de desenvolvimento.
+Em um projeto de desenvolvimento no qual o processo de garantia da qualidade do software não está sendo empregado, os erros são produzidos continuamente, mas ninguém está administrando sua frequência, reincidência ou gravidade. Ninguém está analisando as áreas do software que estão sofrendo maior incidência de problemas de forma a estudar as origens “reais” dos problemas – erros são apenas sintomas, devemos localizar as reais causas dos problemas de desenvolvimento.
 
 A equipe de qualidade, através de um levantamento estatístico referente aos erros identificados, pode demonstrar os pontos do projeto que apresentam maior incidência de problemas, possibilitando ações corretivas durante o ciclo de desenvolvimento do software. As ações corretivas têm por objetivo minimizar problemas que estão sendo identificados durante o desenvolvimento.
 
@@ -36,13 +36,13 @@ Estudos demonstram que a desorganização se amplia à medida que colocamos mais
 
 ### 7.5.1. Fator Desorganização
 
-Todo projeto tecnológico tem seus níveis de desorganização: uns são mais acentuados, outros menos. A desorganização reflete o número de erros gerados e o quanto este se propagou nas fases do projeto. Quanto maior o número de erros e maior a propagação destes, maior será o nível de desorganização do projeto estudado. A desorganização reflete a produtividade da equipe de desenvolvimento e, conseqüentemente, os retrabalhos do projeto tecnológico.
+Todo projeto tecnológico tem seus níveis de desorganização: uns são mais acentuados, outros menos. A desorganização reflete o número de erros gerados e o quanto este se propagou nas fases do projeto. Quanto maior o número de erros e maior a propagação destes, maior será o nível de desorganização do projeto estudado. A desorganização reflete a produtividade da equipe de desenvolvimento e, consequentemente, os retrabalhos do projeto tecnológico.
 
 <div align='center'>
     <img src='books/alexandre_bartie/imgs/figura-7-1.png'>
 </div>
 
-A entrada de um novo profissional em um projeto altamente desorganizado (altos índices de erros) deve ser encarada de forma positiva caso esse profissional seja direcionado a atividades deficientes do projeto, contribuindo na redução do nível de “desorganização”, refletindo imediatamente em menos erros, menor índice de retrabalho e, conseqüentemente, maior produtividade da equipe como um todo, do contrário, a entrada desse profissional somente aumentará o nível de desorganização do projeto.
+A entrada de um novo profissional em um projeto altamente desorganizado (altos índices de erros) deve ser encarada de forma positiva caso esse profissional seja direcionado a atividades deficientes do projeto, contribuindo na redução do nível de “desorganização”, refletindo imediatamente em menos erros, menor índice de retrabalho e, consequentemente, maior produtividade da equipe como um todo, do contrário, a entrada desse profissional somente aumentará o nível de desorganização do projeto.
 
 ### 7.5.2. Fator Retrabalho
 

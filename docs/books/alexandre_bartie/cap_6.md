@@ -14,7 +14,7 @@ Apesar de sabermos que um processo 100% automatizado é difícil de se alcançar
 
 Extenuante pelo fato de que todas as vezes que determinada funcionalidade é inserida ou modificada, todas as outras funcionalidades devem ser novamente testadas, o que exige grande esforço de repetição, tornando esta atividade inviável. Para viabilizar os procedimentos manuais, é necessário reduzir o volume de cenários a serem testados, reduzindo o nível de cobertura dos testes e, consequêntemente, aumentando a probabilidade de novos errros não serem identificados. Isso reflete nos custos e na confiabilidade do processo.
 
-Não confiável porque faltam garantias reais sobre como o profissional de testes está operacionalizando tais atividades, não sendo possível garantir que este seguiu criteriosamente as recomendações estabelecidas no planejamento, empregando todos os cenários existentes, executando a seqüência correta dos procedimentos de testes, entrando com as informações adequadas às condições que estão sendo testadas e, finalmente, conferindo se ocorreu o comportamento esperado. As interferências humanas no processo tornam o modelo muito frágil, o que pode desacreditar todo o esforço que está sendo realizado.
+Não confiável porque faltam garantias reais sobre como o profissional de testes está operacionalizando tais atividades, não sendo possível garantir que este seguiu criteriosamente as recomendações estabelecidas no planejamento, empregando todos os cenários existentes, executando a sequência correta dos procedimentos de testes, entrando com as informações adequadas às condições que estão sendo testadas e, finalmente, conferindo se ocorreu o comportamento esperado. As interferências humanas no processo tornam o modelo muito frágil, o que pode desacreditar todo o esforço que está sendo realizado.
 
 ## 6.3. Qualidade é Sempre Aplicada Tardiamente no Desenvolvimento
 
@@ -46,7 +46,7 @@ Essa abordagem é extremamente tentadora, pois reduz drasticamente o esforço de
 
 ## 6.7. Deficiência no Planejamento dos Testes
 
-O planejamento é um exercício mental que produz uma visão sobre como resolver um conjunto de situações, antecipando os passos de realização de um trabalho. Estudamos o problema, analisamos as soluções, operacionalizamos uma seqüência de atividades e prevemos eventuais riscos e insucessos. Dessa forma, estaremos nos preparando para o projeto a ser realizado.
+O planejamento é um exercício mental que produz uma visão sobre como resolver um conjunto de situações, antecipando os passos de realização de um trabalho. Estudamos o problema, analisamos as soluções, operacionalizamos uma sequência de atividades e prevemos eventuais riscos e insucessos. Dessa forma, estaremos nos preparando para o projeto a ser realizado.
 
 Se pensarmos no curto prazo, o planejamento exigirá maior esforço de trabalho. Maior esforço sempre é sinônimo de maiores custos, maior volume de horas trabalhadas maior número de profissionais envolvidos. No entanto, analisando o ciclo de vida do software e sua expectativa de se manter ativo por um período de cinco anos, temos que planejar as atividades de forma a reduzir os custos de manter esse ambiente de testes operacional por todo esse período. Se negligenciarmos o planejamento, além de aumentar as chances de insucesso na detecção de erros, os custos finais provocados pela ineficiência e inflexibilidade do modelo serão muito mais altos.
 
@@ -66,7 +66,7 @@ Por diversas razões, os prazos de entrega de um software são sempre maiores do
     <img src='books/alexandre_bartie/imgs/figura-6-2.png'>
 </div>
 
-As primeiras etapas sacrificadas são as de modelagem e estruturação da solução. São fases que, mal feitas, trarão conseqüências diretas na flexibilidade e manutenção da aplicação. Sem essas fases, o desenvolvimento passa a codificar uma solução “pouco pensada”, sem considerar os diversos aspectos de negócio a longo prazo.
+As primeiras etapas sacrificadas são as de modelagem e estruturação da solução. São fases que, mal feitas, trarão consequências diretas na flexibilidade e manutenção da aplicação. Sem essas fases, o desenvolvimento passa a codificar uma solução “pouco pensada”, sem considerar os diversos aspectos de negócio a longo prazo.
 
 Com o atraso já entrando na casa dos meses, é comum a área de desenvolvimento sacrificar também a etapa dos testes. A fase não é totalmente eliminada, porém perde eficiência em sua principal missão – detecção dos erros. A redução de tempo ocorre eliminando a fase de planejamento de testes, que consome mais da metade do tempo desse processo. Dessa forma, perde-se muito na qualidade dos testes finais, deixando processo de testes caótico e falho.
 

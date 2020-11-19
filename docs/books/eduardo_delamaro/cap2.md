@@ -99,7 +99,7 @@ Assim, esse critério é usado em conjunto com o particionamento de equivalênci
 
 Embora não existam diretrizes bem definidas que levem à determinação dos dados de teste, Meyers sugere que as seguintes recomendações sejam seguidas:
 
-- 1. se a condição de entrada especifica um intervalo de valores, devem ser definidos dados de teste para os limites desse intervalo e dados de teste imediatamente subseqüentes, que explorem as classes inválidas vizinhas desse intervalo. Por exemplo, se uma classe válida estiver no intervalo −1, 0 e +1, 0, devem ser definidos os seguintes dados de teste: −1, 0; +1, 0; −1, 001 e +1, 001;
+- 1. se a condição de entrada especifica um intervalo de valores, devem ser definidos dados de teste para os limites desse intervalo e dados de teste imediatamente subsequentes, que explorem as classes inválidas vizinhas desse intervalo. Por exemplo, se uma classe válida estiver no intervalo −1, 0 e +1, 0, devem ser definidos os seguintes dados de teste: −1, 0; +1, 0; −1, 001 e +1, 001;
 - 2. se a condição de entrada especifica uma quantidade de valores, por exemplo, de 1 a 255 valores, devem ser definidos dados de teste com nenhum valor de entrada, somente um valor, 255 valores e 256 valores de entrada;
 - 3. usar a diretriz 1 para as condições de saída;
 - 4. usar a diretriz 2 para as condições de saída;
@@ -123,7 +123,7 @@ classes identificadas.
 
 ### 2.3.3. Teste Funcional Sistemático
 
-Este critério combina os critérios Particionamento de Equivalência e Análise do Valor Limite. Uma vez que os domínios de entrada e de saída tenham sido particionados, este critério requer ao menos dois casos de teste de cada partição para minimizar o problema de que defeitos coincidentes mascarem falhas. Além disso, ele também requer a avaliação no limite de cada partição e subseqüente a ele. Para facilitar a identificação desses casos de teste, o critério fornece as seguintes diretrizes:
+Este critério combina os critérios Particionamento de Equivalência e Análise do Valor Limite. Uma vez que os domínios de entrada e de saída tenham sido particionados, este critério requer ao menos dois casos de teste de cada partição para minimizar o problema de que defeitos coincidentes mascarem falhas. Além disso, ele também requer a avaliação no limite de cada partição e subsequente a ele. Para facilitar a identificação desses casos de teste, o critério fornece as seguintes diretrizes:
 
 - 1. **Valores numéricos**:
 
@@ -154,7 +154,7 @@ Tipos diferentes de valores devem ser explorados na entrada e na saída como, po
 - 3. Valores ilegais
 
 <p style="margin-left: 5%;">
-Valores que correspondem a entradas ilegais também devem ser incluídos nos casos de teste, para assegurar que o software os rejeita. Deve-se também tentar gerar valores ilegais, os quais não devem ser bem-sucedidos. É importante que sejam selecionados os limites dos intervalos numéricos, tanto inferior quanto superior, valores imediatamente fora dos limites desses intervalos e também os valores imediatamente subseqüentes aos limites do intervalo e pertencentes a ele.
+Valores que correspondem a entradas ilegais também devem ser incluídos nos casos de teste, para assegurar que o software os rejeita. Deve-se também tentar gerar valores ilegais, os quais não devem ser bem-sucedidos. É importante que sejam selecionados os limites dos intervalos numéricos, tanto inferior quanto superior, valores imediatamente fora dos limites desses intervalos e também os valores imediatamente subsequentes aos limites do intervalo e pertencentes a ele.
 </p>
 
 - 4. Números Reais
@@ -193,7 +193,7 @@ Por ser baseado nos critérios Particionamento de Equivalência e Análise do Va
 
 ### 2.3.4. Grafo Causa-Efeito
 
-Uma das limitações dos critérios anteriores é que eles não exploram combinações dos dados de entrada. Já o critério Grafo Causa-Efeito ajuda na definição de um conjunto de casos de teste que exploram ambigüidades e incompletude nas especificações. O grafo é uma linguagem formal na qual a especificação é traduzida e o processo para derivar casos de teste a partir desse critério pode ser resumido nos seguintes passos:
+Uma das limitações dos critérios anteriores é que eles não exploram combinações dos dados de entrada. Já o critério Grafo Causa-Efeito ajuda na definição de um conjunto de casos de teste que exploram ambiguidades e incompletude nas especificações. O grafo é uma linguagem formal na qual a especificação é traduzida e o processo para derivar casos de teste a partir desse critério pode ser resumido nos seguintes passos:
 
 - 1. Dividir a especificação do software em partes, pois a construção do grafo para grandes especificações torna-se bastante complexa.
 - 2. Identificar as causas e efeitos na especificação. As causas correspondem às entradas, estímulos, ou qualquer coisa que provoque uma resposta do sistema em teste e os efeitos correspondem às saídas, mudanças no estado do sistema ou qualquer resposta observável. Uma vez identificados, a cada um deve ser atribuído um único número.
